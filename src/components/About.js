@@ -69,7 +69,7 @@ export default function () {
 const contents = [
   {
     title: `About Me`,
-    message: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut natus sit magnam laboriosam, dolorem unde, autem eligendi molestias praesentium dignissimos consequatur deleniti optio earum tenetur eos porro ad ipsum illo voluptatum sunt reiciendis,repudiandae repellendus incidunt perferendis quaerat reiciendis,repudiandae expedita. 
+    message: `Direx ipsum dolor sit amet consectetur adipisicing elit. Aut natus sit magnam laboriosam, dolorem unde, autem eligendi molestias praesentium dignissimos consequatur deleniti optio earum tenetur eos porro ad ipsum illo voluptatum sunt reiciendis,repudiandae repellendus incidunt perferendis quaerat reiciendis,repudiandae expedita. 
 
     Unde sequi natus laboriosam aperiam nemo error earum quia ea, perspiciatis deleniti, eaque temporibus.reiciendis,repudiandae reiciendis,repudiandae Illum nihil voluptatum facere doloremque ab? Minima ipsam est expedita reiciendis,repudiandae. Accusamus, consequatur reiciendis,repudiandae  earum. Tempora, natus autem. reiciendis,repudiandae Inventore iusto nemo eaque consequuntur?`,
   },
