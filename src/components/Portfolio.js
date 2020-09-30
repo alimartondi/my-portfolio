@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Slick from "./Slick";
 
-export default function () {
+export default function portFolioSection() {
   return (
     <section className="portfolio-area" id="portfolio">
       <Container>
@@ -14,7 +14,7 @@ export default function () {
         </Row>
       </Container>
       <Container className="px-0">
-        <div className="portfolio-card">
+        <div className="portfolio-card mt-5">
           <Slick />
         </div>
       </Container>

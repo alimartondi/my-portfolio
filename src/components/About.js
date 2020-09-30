@@ -10,9 +10,11 @@ export default function () {
       <Container>
         <Row>
           {contents.map((content, i) => (
-            <Col sm={6} className="about-content mt-5" key={i}>
+            <Col sm={6} className="about-content mt-6" key={i}>
               <h2 className="second-title">{content.title}</h2>
-              <p style={{ whiteSpace: "pre-line" }}>{content.message}</p>
+              <p className="about-desc" style={{ whiteSpace: "pre-line" }}>
+                {content.message}
+              </p>
               <Row>
                 <Col>
                   <a className="information-link" href="/">

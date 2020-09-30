@@ -11,11 +11,7 @@ import Portfolio from "./components/Portfolio";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
-    <Main />
-    <About />
-    <Portfolio />
-    {/* <App /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
