@@ -78,8 +78,12 @@
   bottom: -7px !important;
 }
 
+.burger_hamburger--spin__3aNMq.burger_is-active__3Yxiv .burger_hamburger-inner__14XT2:after {
+  bottom: 0 !important;
+}
+
 .burger_hamburger-inner__14XT2::before {
-  top: -7px;
+  top: -7px !important;
 }
 
 /* ==End of Humberger Menu Icon== */
