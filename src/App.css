@@ -180,24 +180,24 @@ body {
 
 .main-button {
     background-color: var(--main-dark);
-    border-color: 1px solid var(--main-dark);
+    border-color: var(--main-dark);
 }
 
 .second-button {
     margin-top: 10px;
     background-color: var(--main-light);
-    border-color: 1px solid var(--main-dark);
+    border-color: var(--main-dark);
     color: var(--main-dark);
 }
 
 .main-button:hover {
     background-color: var(--main-light);
     color: var(--main-dark);
-    border-color: 1px solid var(--main-dark);
+    border-color: var(--main-dark);
 }
 
 .second-button:hover {
     background-color: var(--main-dark);
     color: var(--main-light);
-    border-color: 1px solid var(--main-dark);
+    border-color: var(--main-dark);
 }
