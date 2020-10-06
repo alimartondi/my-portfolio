@@ -36,7 +36,7 @@
 }
 
 .nav-items.active {
-  background-color: #0abab5;
+  background-color: var(--main-blue);
   top: 0;
   right: 0;
   transition: all 0.3s ease-out;
@@ -119,6 +119,9 @@
     position: relative;
     left: 0;
     height: 100%;
+  }
+  .nav-items.active {
+    display: none;
   }
 
   .nav-link {
