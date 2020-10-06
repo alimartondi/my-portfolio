@@ -58,8 +58,7 @@
 
 /* ==Humberger Menu Icon== */
 .burger_hamburger-box__3lYk7 {
-  width: 24px;
-  height: 24px;
+  width: 24px !important;
 }
 
 .burger_hamburger__21cuQ {
@@ -76,11 +75,11 @@
 }
 
 .burger_hamburger-inner__14XT2:after {
-  bottom: -7px;
+  bottom: -7px !important;
 }
 
 .burger_hamburger-inner__14XT2::before {
-  top: -7px !important;
+  top: -7px;
 }
 
 /* ==End of Humberger Menu Icon== */
