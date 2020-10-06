@@ -48,7 +48,6 @@ export default function NavBar() {
             scale={1.2}
             style={{
               height: "20px",
-              width: "20px",
               padding: "0",
               margin: "0",
             }}

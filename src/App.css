@@ -17,6 +17,11 @@
 a,
 a:hover {
     text-decoration: none;
+    color: var(--main-blue);
+}
+
+a {
+    color: var(--main-dark);
 }
 
 dl,

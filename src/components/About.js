@@ -10,7 +10,7 @@ export default function () {
       <Container>
         <Row>
           {contents.map((content, i) => (
-            <Col sm={6} className="about-content mt-6" key={i}>
+            <Col md={6} className="about-content mt-6" key={i}>
               <h2 className="second-title">{content.title}</h2>
               <p className="about-desc" style={{ whiteSpace: "pre-line" }}>
                 {content.message}
@@ -25,7 +25,7 @@ export default function () {
               </Row>
             </Col>
           ))}
-          <Col sm={6} className="about-profile">
+          <Col md={6} className="about-profile">
             <div className="about-card text-center mt-5 d-block d-xl-flex">
               <div className="card-image justify-content-center">
                 <img
