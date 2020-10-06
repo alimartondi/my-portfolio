@@ -29,7 +29,7 @@ export default class SimpleSlider extends Component {
     return (
       <Slider {...settings}>
         {contents.map((content, i) => (
-          <Col lg={12} ket={i}>
+          <Col lg={12} key={i}>
             <div className="portfolio-card-wrap">
               <img
                 className="img-fluid"

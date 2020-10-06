@@ -9,6 +9,12 @@
   padding-top: 110px;
 }
 
+@media (max-width:576px) {
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
 .hero-image {
   order: 1;
   text-align: center;
@@ -313,9 +319,4 @@ li:hover {
   .hero-content {
     padding-top: 120px;
   }
-
-  /* .hero-image {
-    margin-right: -40px;
-    right: 0;
-  } */
 }

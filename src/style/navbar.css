@@ -70,8 +70,8 @@
 .burger_hamburger-inner__14XT2,
 .burger_hamburger-inner__14XT2:after,
 .burger_hamburger-inner__14XT2:before {
-  width: 23px;
-  height: 2px;
+  width: 23px !important;
+  height: 2px !important;
   padding: 0;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .burger_hamburger-inner__14XT2::before {
-  top: -7px;
+  top: -7px !important;
 }
 
 /* ==End of Humberger Menu Icon== */
