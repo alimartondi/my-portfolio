@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slick from "../image/slick1.jpg";
 import Slick2 from "../image/slick2.png";
 import Slide from "../image/slide-portfolio.png";
-import { Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -29,27 +28,37 @@ export default class SimpleSlider extends Component {
     };
     return (
       <Slider {...settings}>
-        <Col lg={12}>
-          <div className="portfolio-card-wrap">
-            <img className="img-fluid" src={Slide}></img>
-          </div>
-        </Col>
-        <Col lg={12}>
-          <div className="portfolio-card-wrap">
-            <img className="img-fluid" src={Slide}></img>
-          </div>
-        </Col>
-        <Col lg={12}>
-          <div className="portfolio-card-wrap">
-            <img className="img-fluid" src={Slick}></img>
-          </div>
-        </Col>
-        <Col lg={12}>
-          <div className="portfolio-card-wrap">
-            <img className="img-fluid" src={Slide}></img>
-          </div>
-        </Col>
+        {contents.map((content, i) => (
+          <Col lg={12} ket={i}>
+            <div className="portfolio-card-wrap">
+              <img
+                className="img-fluid"
+                src={content.image}
+                alt={content.alt}
+              ></img>
+            </div>
+          </Col>
+        ))}
       </Slider>
     );
   }
 }
+
+const contents = [
+  {
+    image: Slide,
+    alt: "Slick Slider Image",
+  },
+  {
+    image: Slick2,
+    alt: "Slick Slider Image",
+  },
+  {
+    image: Slide,
+    alt: "Slick Slider Image",
+  },
+  {
+    image: Slick2,
+    alt: "Slick Slider Image",
+  },
+];

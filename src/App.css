@@ -1,38 +1,203 @@
-/* .App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+/* ===CSS RESET=== */
+:root {
+    --main-blue: #0ABAB5;
+    --main-dark: #121212;
+    --main-light: #FFFFFF;
+    --main-gray: #909090;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a,
+a:hover {
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+dl,
+ol,
+ul,
+li {
+    text-decoration: none;
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.col-lg-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.no-gutters,
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+*:focus {
+    outline: none !important;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ===ALL TITLE STYLE=== */
+.main-title {
+    color: var(--main-dark);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 2.9rem;
+}
+
+.second-title {
+    color: var(--main-dark);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 756px) {
+    .main-title {
+        font-size: 55px;
+
+    }
+
+    .second-title {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-title {
+        font-size: 75px;
+        line-height: 4.5rem;
+    }
+}
+
+/* ====ALL BUTTON STYLE=== */
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: var(--main-dark);
+    border-color: var(--main-dark);
+}
+
+.main-button,
+.second-button {
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease-in-out 0s;
+    width: 100%;
+    border-radius: 35px;
+}
+
+.main-button {
+    background-color: var(--main-dark);
+    border-color: 1px solid var(--main-dark);
+}
+
+.second-button {
+    margin-top: 10px;
+    background-color: var(--main-light);
+    border-color: 1px solid var(--main-dark);
+    color: var(--main-dark);
+}
+
+.main-button:hover {
+    background-color: var(--main-light);
+    color: var(--main-dark);
+    border-color: 1px solid var(--main-dark);
+}
+
+.second-button:hover {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    border-color: 1px solid var(--main-dark);
+}

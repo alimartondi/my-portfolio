@@ -1,7 +1,6 @@
 import React from "react";
-import Alianda from "../image/alianda.png";
-import Alianda1 from "../image/slide-portfolio.png";
-import { Container, Button, Row, Col } from "react-bootstrap";
+import Alianda from "../image/alianda1.png";
+import { Container, Button } from "react-bootstrap";
 import "../style/style.css";
 
 export default function mainSection() {
@@ -9,7 +8,7 @@ export default function mainSection() {
     <section className="main-area" id="main">
       <div className="banner bg-light shadow-sm">
         <Container>
-          <div className="hero-banner d-block d-md-flex">
+          <div className="hero-banner d-block d-md-flex justify-content-between">
             <div className="hero-content">
               <h6>Hello, I am</h6>
               <h1 className="main-title">
@@ -21,7 +20,7 @@ export default function mainSection() {
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form.
               </p>
-              <div className="hero-btn d-block d-xl-flex text-center mt-5">
+              <div className="hero-btn d-block d-md-flex text-center mt-5">
                 <Button className="main-button shadow-sm">Hire Me!</Button>
                 <Button className="second-button shadow-sm">
                   Download My CV!

@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Container, Button, Row, Col, ProgressBar } from "react-bootstrap";
+import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import Dybala from "../image/dyb.png";
 
 export default function () {
