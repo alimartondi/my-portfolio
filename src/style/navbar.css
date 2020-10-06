@@ -58,8 +58,8 @@
 
 /* ==Humberger Menu Icon== */
 .burger_hamburger-box__3lYk7 {
-  width: 24px !important;
-  height: 24px !important;
+  width: 24px;
+  height: 24px;
 }
 
 .burger_hamburger__21cuQ {
@@ -70,17 +70,17 @@
 .burger_hamburger-inner__14XT2,
 .burger_hamburger-inner__14XT2:after,
 .burger_hamburger-inner__14XT2:before {
-  width: 23px !important;
-  height: 2px !important;
-  padding: 0 !important;
+  width: 23px;
+  height: 2px;
+  padding: 0;
 }
 
 .burger_hamburger-inner__14XT2:after {
-  bottom: -7px !important;
+  bottom: -7px;
 }
 
 .burger_hamburger-inner__14XT2::before {
-  top: -7px !important;
+  top: -7px;
 }
 
 /* ==End of Humberger Menu Icon== */
