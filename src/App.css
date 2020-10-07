@@ -143,8 +143,15 @@ body {
     font-weight: 600;
 }
 
+.subtitle {
+    color: var(--main-dark);
+    font-size: 24px;
+    font-weight: 500;
+}
+
 .description {
     font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 
 @media (min-width: 756px) {

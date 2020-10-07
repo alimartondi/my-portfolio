@@ -209,6 +209,43 @@ li:hover {
 }
 
 
+/* ===SEVICE AREA=== */
+
+.service-card {
+  height: 400px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: var(--main-light);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .2);
+  ;
+}
+
+.card-head .card-icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--main-blue);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 50px;
+  color: var(--main-light);
+}
+
+.card-body .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--main-dark);
+}
+
+
 
 @media (min-width: 768px) {
 
