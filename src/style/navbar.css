@@ -45,14 +45,14 @@
 }
 
 .nav-items.active .nav-link {
-  color: #ffffff;
+  color: var(--main-light);
   font-weight: 500;
 }
 
 .nav-items hr {
   width: 90%;
   height: 0.5px;
-  background-color: #ffffff;
+  background-color: var(--main-light);
   margin: 25px auto;
   border-radius: 4px;
 }
@@ -73,6 +73,7 @@
   width: 23px !important;
   height: 2px !important;
   padding: 0;
+  border-radius: 0;
 }
 
 .burger_hamburger-inner__14XT2:after {

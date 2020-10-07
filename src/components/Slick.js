@@ -21,7 +21,6 @@ export default class SimpleSlider extends Component {
           settings: {
             arrows: false,
             variableWidth: true,
-            dots: false,
           },
         },
       ],
