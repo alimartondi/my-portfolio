@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
-import Dybala from "../image/dyb.png";
+import Profil_pic from "../image/a__profil.jpg";
 
 export default function () {
   return (
@@ -10,15 +10,20 @@ export default function () {
       <Container>
         <Row>
           {contents.map((content, i) => (
-            <Col md={6} className="about-content mt-6" key={i}>
-              <h2 className="second-title">{content.title}</h2>
-              <p className="about-desc" style={{ whiteSpace: "pre-line" }}>
+            <Col md={6} className="about-content" key={i}>
+              <h2 className="about-content-title second-title">
+                {content.title}
+              </h2>
+              <p
+                className="about-content-desc"
+                style={{ whiteSpace: "pre-line" }}
+              >
                 {content.message}
               </p>
               <Row>
                 <Col>
                   <a className="information-link" href="/">
-                    Lebih Lanjut
+                    Cerita Selengkapnya
                     <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
                   </a>
                 </Col>
@@ -26,19 +31,19 @@ export default function () {
             </Col>
           ))}
           <Col md={6} className="about-profile">
-            <div className="about-card text-center mt-5 d-block d-xl-flex">
+            <div className="about-card d-block d-xl-flex">
               <div className="card-image justify-content-center">
                 <img
-                  src={Dybala}
+                  src={Profil_pic}
                   className="img-fluid
                 rounded-circle"
                   height="300"
-                  alt=""
+                  alt="Profil"
                 />
               </div>
-              <div className="card-body text-center">
+              <div className="about-card-body">
                 <div className="card-title">
-                  <h5>Ali Martondi</h5>
+                  <h5 className="card-title">Ali Martondi Batubara</h5>
                 </div>
                 <div className="card-description">
                   <p>
@@ -70,8 +75,12 @@ export default function () {
 
 const contents = [
   {
-    title: `About Me`,
-    message: `Direx ipsum dolor sit amet consectetur adipisicing elit. Aut natus sit magnam laboriosam, dolorem unde, autem eligendi molestias praesentium dignissimos consequatur deleniti optio earum tenetur eos porro ad ipsum illo voluptatum sunt reiciendis,repudiandae repellendus incidunt perferendis quaerat reiciendis,repudiandae expedita.`,
+    title: `Tentang saya`,
+    message: `Perkenalkan nama saya Ali Martondi, saya seorang Frontend Developer, sarjana Teknik Informatika dari salah satu perguruan tinggi di Jakarta. Saya berasal dari Mandailing Natal, Sumatera Utara, dan sekarang tinggal di Pasar Minggu, Jakarta Selatan.
+    
+    Saya menggunakan React dan Bootstrap dalam membuat Frontend sebuah website, termasuk website Portfolio ini juga dibuat menggunakan kedua framework tersebut.
+    
+    Saya belum punya pengalaman bekerja full time, namun saya sudah pernah mengerjakan project sungguhan sebuah website untuk Infra Digital Foundation yang link demonya bisa ditemukan di bagian Portfolio website ini.`,
   },
 ];
 

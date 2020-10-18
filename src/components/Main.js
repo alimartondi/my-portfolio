@@ -21,8 +21,10 @@ export default function mainSection() {
                 but the majority have suffered alteration in some form.
               </p>
               <div className="hero-btn d-block d-md-flex text-center mt-5">
-                <Button className="main-button shadow-sm">Hire Me!</Button>
-                <Button className="second-button shadow-sm">
+                <Button variant="dark" className="main-button shadow-sm">
+                  Hire Me!
+                </Button>
+                <Button variant="dark" className="second-button shadow-sm">
                   Download My CV!
                 </Button>
               </div>

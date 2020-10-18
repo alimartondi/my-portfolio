@@ -36,6 +36,10 @@
   margin-top: 30px;
 }
 
+.about-card-body {
+  margin-top: 18px;
+}
+
 .about-profile .card-image img {
   height: 220px;
 }
@@ -71,9 +75,9 @@
 .information-link {
   font-size: 18px;
   line-height: 1.33;
-  color: #323337;
+  color: var(--main-blue) !important;
   text-decoration: none;
-  font-family: MaisonNeue-Demi, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: auto;
   display: inline-block;
 }
@@ -81,9 +85,9 @@
 .information-link:after {
   content: "";
   position: absolute;
-  width: calc(100% - 428px);
+  width: calc(100% - 348px);
   height: 2px;
-  background-color: #323337;
+  background-color: var(--main-blue);
   visibility: hidden;
   bottom: -2px;
   left: 0;
@@ -265,15 +269,7 @@ li:hover {
   color: var(--main-light);
 }
 
-.card-body .card-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--main-dark);
-}
 
-.card-body .card-description {
-  font-size: 16px;
-}
 
 
 
@@ -312,8 +308,8 @@ li:hover {
     flex-direction: column-reverse;
   }
 
-  .card-image img {
-    margin-right: 80px;
+  .about-profile .card-image img {
+    margin-right: 50px;
     height: 250px;
   }
 
@@ -321,9 +317,15 @@ li:hover {
     order: 1;
     padding-left: 18px;
   }
+  .about-content-desc{
+    margin-top: 30px;
+  }
 
   .about-profile {
     padding-right: 24px;
+  }
+  .information-link {
+    margin-top: 18px;
   }
 
   /* ==PORTFOLIO== */

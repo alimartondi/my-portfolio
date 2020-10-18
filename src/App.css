@@ -155,6 +155,20 @@ body {
     line-height: 1.5rem;
 }
 
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--main-dark);
+}
+
+.card-description {
+    font-size: 16px;
+}
+
+
+
+
+
 @media (min-width: 756px) {
     .main-title {
         font-size: 55px;
