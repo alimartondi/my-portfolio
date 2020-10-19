@@ -4,6 +4,7 @@ import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/web-brand1.svg";
 import Logo from "../image/logo.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -12,29 +13,49 @@ export default function NavBar() {
 
   const isOnTop = useScrollHandler();
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <header className="header-area" id="header">
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-brand">
-            <a href="/">
-              <img src={Brand} alt="Logo" />
-            </a>
+            <img src={Brand} alt="Logo" onClick={scrollToTop} duration={500} />
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
             <div className="sidebar-brand text-center mt-5 d-block d-sm-none">
               <img src={Logo} alt="sidebar logo" />
             </div>
             <hr className="d-block d-sm-none text-center" />
-            <a className="nav-link" href="/">
+            <Link
+              to="about"
+              smooth={true}
+              offset={-120}
+              duration={500}
+              className="nav-link"
+            >
               About
-            </a>
-            <a className="nav-link" href="/">
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              offset={-60}
+              duration={500}
+              className="nav-link"
+            >
               Portfolio
-            </a>
-            <a className="nav-link" href="/">
+            </Link>
+            <Link
+              to="service"
+              smooth={true}
+              offset={-60}
+              duration={500}
+              className="nav-link"
+            >
               Service
-            </a>
+            </Link>
             <a className="nav-link" href="/">
               Contact
             </a>

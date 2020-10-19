@@ -21,6 +21,7 @@
 
 .navbar-brand img {
   max-height: 28px;
+  cursor: pointer;
 }
 
 .nav-items {
@@ -55,6 +56,9 @@
   background-color: var(--main-light);
   margin: 25px auto;
   border-radius: 4px;
+}
+.nav-items .nav-link{
+  cursor: pointer;
 }
 
 /* ==Humberger Menu Icon== */

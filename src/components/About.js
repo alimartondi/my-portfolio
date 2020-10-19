@@ -111,7 +111,7 @@ const skillContents = [
   },
   {
     title: "JavaScript",
-    percent: "78%",
-    progresbar: "78",
+    percent: "80%",
+    progresbar: "80",
   },
 ];

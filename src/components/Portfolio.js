@@ -17,6 +17,11 @@ export default function portFolioSection() {
         <div className="portfolio-card mt-5">
           <Slick />
         </div>
+        <Row>
+          <Col sm={12}>
+            <h5 className="subtitle">Frontend</h5>
+          </Col>
+        </Row>
       </Container>
     </section>
   );
