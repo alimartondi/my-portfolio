@@ -61,6 +61,7 @@
   cursor: pointer;
 }
 
+
 /* ==Humberger Menu Icon== */
 .burger_hamburger-box__3lYk7 {
   width: 24px !important;
@@ -153,6 +154,11 @@
 
   .nav-link:hover {
     color: #0abab5;
+  }
+
+  .nav-link.active,
+  .nav-link:active {
+    color: var(--main-blue) !important;
   }
 
   .navbar.scrolled {

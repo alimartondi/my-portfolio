@@ -4,8 +4,12 @@ import FooterBrand from "../image/web-brand.png";
 import Facebook from "../image/facebook-icon.svg";
 import Instagram from "../image/instagram-fill-icon.svg";
 import Twitter from "../image/twitter-icon.svg";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function footerSection() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <section className="footer-area" id="footer">
       <div className="footer">
@@ -14,14 +18,28 @@ export default function footerSection() {
             <Col lg={12} className="justify-content-center">
               <div className="footer-items text-center mx-auto">
                 <div className="footer-brand">
-                  <img src={FooterBrand} alt="web-brand" />
+                  <img
+                    src={FooterBrand}
+                    alt="web-brand"
+                    onClick={scrollToTop}
+                  />
                 </div>
 
                 <div className="footer-link">
                   <ul className="d-flex justify-content-between">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Portfolio</li>
+                    <li>
+                      <Link to="main" smooth={true}>
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="about" smooth={true} offset={-120}>
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <a href="portfolio">Portfolio</a>
+                    </li>
                     <li>Service</li>
                     <li>Contact</li>
                   </ul>

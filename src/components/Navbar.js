@@ -17,12 +17,14 @@ export default function NavBar() {
     scroll.scrollToTop();
   };
 
+  const showState = () => setState(!state);
+  // const activeLink = () => setActiveLink(!activeLink);
   return (
     <header className="header-area" id="header">
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-brand">
-            <img src={Brand} alt="Logo" onClick={scrollToTop} duration={500} />
+            <img src={Brand} alt="Logo" onClick={scrollToTop} />
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
             <div className="sidebar-brand text-center mt-5 d-block d-sm-none">
@@ -30,29 +32,38 @@ export default function NavBar() {
             </div>
             <hr className="d-block d-sm-none text-center" />
             <Link
+              activeClass="active"
               to="about"
               smooth={true}
-              offset={-120}
+              spy={true}
+              offset={-80}
               duration={500}
               className="nav-link"
+              onClick={showState}
             >
               About
             </Link>
             <Link
+              activeClass="active"
               to="portfolio"
               smooth={true}
-              offset={-60}
+              spy={true}
+              offset={-120}
               duration={500}
               className="nav-link"
+              onClick={showState}
             >
               Portfolio
             </Link>
             <Link
+              activeClass="active"
               to="service"
               smooth={true}
-              offset={-60}
+              spy={true}
+              offset={-120}
               duration={500}
               className="nav-link"
+              onClick={showState}
             >
               Service
             </Link>
@@ -91,7 +102,6 @@ const useScrollHandler = () => {
       }
     };
     document.addEventListener("scroll", onScroll);
-
     return () => {
       document.removeEventListener("scroll", onScroll);
     };
