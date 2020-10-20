@@ -32,7 +32,7 @@ export default function () {
           ))}
           <Col md={6} className="about-profile">
             <div className="about-card d-block d-xl-flex">
-              <div className="card-image justify-content-center">
+              <div className="card-image d-flex justify-content-center">
                 <img
                   src={Profil_pic}
                   className="img-fluid
@@ -42,17 +42,21 @@ export default function () {
                 />
               </div>
               <div className="about-card-body">
-                <div className="card-title">
-                  <h5 className="card-title">Ali Martondi Batubara</h5>
-                </div>
-                <div className="card-description">
-                  <p>
-                    Frontend Developer
-                    <br />
-                    alimartondi88@gmail.com
-                    <br />
-                    +6281 38274 8686
-                  </p>
+                <h5 className="card-name">Ali Martondi Batubara</h5>
+                <h6 className="card-profession">Frontend Developer</h6>
+
+                <hr />
+                <div className="card-contact">
+                  <ul>
+                    <li className="c__card-link">
+                      <a href="mailto:alimartondi88@gmail.com">
+                        alimartondi88@gmail.com
+                      </a>
+                    </li>
+                    <li className="c__card-link">
+                      <a href="https://wa.me/6281382748686">+62813-8274-8686</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

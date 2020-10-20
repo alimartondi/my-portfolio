@@ -1,4 +1,5 @@
-/* ====MAIN SECTION==== */
+/* ===Main Area=== */
+
 .banner {
   height: auto;
   width: 100%;
@@ -21,27 +22,51 @@
   padding: 0 35px;
 }
 
-/* ==End of Main Section== */
+/* ===End of Main Area=== */
 
 
 
-/* ===ABOUT AREA=== */
-.about-content a {
-  color: #323337;
-  font-weight: 600;
-}
-
-
+/* ===About Area=== */
 .about-area {
   margin-top: 30px;
 }
 
+.about-card{
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--main-light);
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
 .about-card-body {
-  margin-top: 18px;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+}
+
+.about-card-body .card-name{
+  font-weight: 600;
+}
+
+.about-card-body hr{
+  background-color: var(--main-blue);
+  width: 50%;
+  height: 2px;
+  border-radius: 15px;
+  margin: 10px auto 15px;
+}
+
+.c__card-link{
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 3s ease-in-out;
 }
 
 .about-profile .card-image img {
-  height: 220px;
+  height: 250px;
 }
 
 .skill-bar .progress {
@@ -105,7 +130,29 @@
   visibility: visible;
 }
 
-/* ===SLICK SLIDER=== */
+@media(min-width: 1140px){
+  .about-card{
+    padding: 15px;
+  }
+  .about-card-body{
+    margin-left: auto;
+    text-align: left;
+  }
+  .about-card-body hr{
+    margin-left: 0;
+    margin: 30px 0;
+  }
+}
+
+/* ===End Of About Area=== */
+
+
+
+/* ===Portfolio Area=== */
+.portfolio-area{
+  margin-top: 30px;
+}
+
 .slick-slide:focus {
   outline: none;
 }
@@ -160,8 +207,10 @@
   }
 }
 
+/* ===End Of Portfolio Area */
 
-/* ===FOOTER AREA=== */
+
+/* ===Footer Area=== */
 .footer-area {
   background-color: var(--second-gray);
   margin-top: 120px;
@@ -235,8 +284,10 @@ li:hover {
   text-align: center;
 }
 
+/* ===End Of Footer Area=== */
 
-/* ===SEVICE AREA=== */
+
+/* ===Servie Area=== */
 .service-items {
   justify-content: center;
 }
@@ -270,13 +321,17 @@ li:hover {
   color: var(--main-light);
 }
 
+/* ===End Of Sevice Area=== */
 
 
 
 
+/* ===RESPONSIVE=== */
+
+/* <----Laptop View----> */
 
 @media (min-width: 768px) {
-
+/* ===Main Area=== */
   .main-button,
   .second-button {
     max-width: 200px;
@@ -287,7 +342,6 @@ li:hover {
     margin-left: 5px;
   }
 
-  /* ===HERO=== */
   .hero-content {
     padding-top: 150px;
   }
@@ -308,10 +362,13 @@ li:hover {
     margin-top: 100px;
     flex-direction: column-reverse;
   }
+  .about-card{
+    margin-top: 10px;
+
+  }
 
   .about-profile .card-image img {
-    margin-right: 50px;
-    height: 250px;
+    height: 235px;
   }
 
   .about-content {

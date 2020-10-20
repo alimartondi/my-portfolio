@@ -48,7 +48,7 @@ export default function NavBar() {
               to="portfolio"
               smooth={true}
               spy={true}
-              offset={-120}
+              offset={-80}
               duration={500}
               className="nav-link"
               onClick={showState}
@@ -60,7 +60,7 @@ export default function NavBar() {
               to="service"
               smooth={true}
               spy={true}
-              offset={-120}
+              offset={-80}
               duration={500}
               className="nav-link"
               onClick={showState}

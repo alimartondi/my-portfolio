@@ -8,7 +8,7 @@ export default function portFolioSection() {
       <Container>
         <Row>
           <Col sm={12}>
-            <h2 className="second-title mt-5">Portfolio</h2>
+            <h2 className="second-title">Portfolio</h2>
             <h5 className="subtitle">UI UX Design</h5>
           </Col>
         </Row>

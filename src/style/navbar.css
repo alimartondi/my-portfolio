@@ -121,6 +121,11 @@
     width: 45%;
     justify-content: space-between;
   }
+
+  .about-card{
+    display: flex;
+    text-align: center;
+  }
 }
 
 @media (min-width: 576px) {
