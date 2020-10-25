@@ -33,6 +33,10 @@ li {
     text-decoration: none;
     margin: 0;
 }
+img{
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
 
 .col,
 .col-1,
@@ -106,7 +110,7 @@ li {
 .col-xl-auto {
     position: relative;
     width: 100%;
-    padding-right: 0;
+    padding-right: 0px;
     padding-left: 0;
 }
 
@@ -144,6 +148,11 @@ body {
     font-size: 30px;
     font-weight: 600;
 }
+.third-title {
+    color:var(--main-dark);
+    font-size: 28px;
+    font-weight: 600;
+}
 
 .subtitle {
     color: var(--main-dark);
@@ -177,7 +186,7 @@ body {
     }
 
     .second-title {
-        font-size: 45px;
+        font-size: 35px;
     }
 }
 

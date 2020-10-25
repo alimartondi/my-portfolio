@@ -41,7 +41,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={showState}
             >
-              About
+              Tentang Saya
             </Link>
             <Link
               activeClass="active"
@@ -53,7 +53,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={showState}
             >
-              Portfolio
+              Portofolio
             </Link>
             <Link
               activeClass="active"
@@ -65,10 +65,10 @@ export default function NavBar() {
               className="nav-link"
               onClick={showState}
             >
-              Service
+              Layanan
             </Link>
             <a className="nav-link" href="/">
-              Contact
+              Kontak
             </a>
           </div>
           <Burger

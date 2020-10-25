@@ -4,37 +4,63 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slick2 from "../image/slick2.png";
 import Slide from "../image/slide-portfolio.png";
-import { Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
-export default class SimpleSlider extends Component {
+export default class PortfolioSlider extends Component {
   render() {
     const settings = {
+      // className: "portfolio-slider",
       dots: true,
       infinite: false,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
       arrows: true,
+      draggable: true,
+      useCss: false,
+      variableWidth: true,
       responsive: [
+        // {
+        //   breakpoint: 1024,
+        //   settings: {
+        //     arrows: false,
+        //     slidesToShow: 2,
+        //     slidesToScroll: 1,
+        //   },
+        // },
         {
           breakpoint: 600,
           settings: {
+            slidesToShow: 2,
             arrows: false,
-            variableWidth: true,
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            arrows: false,
           },
         },
       ],
     };
     return (
-      <Slider {...settings}>
+      <Slider {...settings} className="">
         {contents.map((content, i) => (
-          <Col lg={12} key={i}>
+          <Col sm={12} key={i}>
             <div className="portfolio-card-wrap">
-              <img
-                className="img-fluid"
-                src={content.image}
-                alt={content.alt}
-              ></img>
+              <div className="c-card__img">
+                <img
+                  className="img-fluid"
+                  src={content.image}
+                  alt={content.alt}
+                ></img>
+              </div>
+              <p className="c-card__body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                tempora ipsam doloribus numquam facere soluta esse! Dolor
+                dolores qui temporibus iure eaque soluta molestiae. Quisquam?
+              </p>
             </div>
           </Col>
         ))}

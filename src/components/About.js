@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import Profil_pic from "../image/a__profil.jpg";
+import { Link } from "react-router-dom";
 
 export default function () {
   return (
@@ -22,10 +23,10 @@ export default function () {
               </p>
               <Row>
                 <Col>
-                  <a className="information-link" href="/">
+                  <Link className="information-link" to="/about">
                     Cerita Selengkapnya
                     <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
-                  </a>
+                  </Link>
                 </Col>
               </Row>
             </Col>

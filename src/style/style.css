@@ -156,55 +156,86 @@
 .slick-slide:focus {
   outline: none;
 }
+.slick-slide{
+  padding-right: 16px;
+  width: 300px;
+}
+.slick-slider .slick-list {
+  padding:8px;
+}
 
 .portfolio-card {
   position: relative;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 .portfolio-card-wrap {
   position: relative;
-  background: #bbb;
-  margin-left: auto;
-  margin-right: 0.5rem;
-  height: 180px;
-  max-width: none;
-  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
   border-radius: 16px;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  height: 100%;
   overflow: hidden;
+  /* padding-right: 16px; */
+
+
+  /* position: relative;
+  background-color: var(--main-light); */
+  /* margin-right: 0.5rem; */
+  /* height: 180px; */
+  /* max-width: none; */
+  /* border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.2); */
+}
+
+.c-card__body{
+  display: none;
 }
 
 .portfolio-card-wrap img {
-  border-radius: 16px;
-  width: auto;
+  min-width: 0;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  margin: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 180px;
+  max-width: 100%;
 }
 
-@media (max-width: 320px) {
-  .portfolio-card-wrap img {
+@media (max-width: 375px) {
+  /* .portfolio-card-wrap img {
     height: 160px;
   }
 
   .portfolio-card-wrap {
-    height: 160px;
-  }
+   width: 280px;
+  } */
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .portfolio-card-wrap {
+  /* .portfolio-card-wrap {
     height: 235px;
   }
 
   .portfolio-card-wrap img {
     height: 290px;
-  }
+  } */
 }
 
 /* ===End Of Portfolio Area */
@@ -390,18 +421,29 @@ li:hover {
   .portfolio-area {
     margin-top: 100px;
   }
-
+  .slick-slider .slick-list {
+    padding: 16px 16px 24px;
+  }
+  .slick-slide{
+    padding-right: 32px;
+    width: 360px;
+  }
   .portfolio-card-wrap {
-    position: relative;
-    height: auto;
-    width: 100%;
-    border-radius: 30px;
-    overflow: hidden;
+    /* position: relative; */
+    /* height: auto; */
+    /* width: 340px; */
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
   }
 
-  .portfolio-card-wrap img {
+  /* .portfolio-card-wrap img {
     height: auto;
     width: 100%;
+  } */
+  
+  .c-card__body{
+    display: block;
+    padding: 16px;
   }
 
   .slick-prev,
@@ -409,23 +451,10 @@ li:hover {
     height: 50px !important;
     width: 50px !important;
     border-radius: 50%;
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
     z-index: 1;
-    top: 50%;
-    display: block;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-    background-color: var(--main-light) !important;
-    box-shadow: 0 2.8px 2.2px rgba(160, 160, 160, 0.034),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      0 100px 80px rgba(0, 0, 0, 0.12);
+    top: -65px !important;
+    -webkit-box-shadow: 0 6px 18px 0 rgba(0,0,0,.2);
+    box-shadow: 0 6px 18px 0 rgba(0,0,0,.2);
   }
 
   .slick-prev:before,
@@ -437,6 +466,14 @@ li:hover {
     color: var(--main-blue) !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-prev{
+    left: 0;
+    right: 70px !important;
+    margin-left: auto;
+  }
+  .slick-next{
+    right: 0 !important;
   }
 
   .slick-dots li.slick-active button:before {
