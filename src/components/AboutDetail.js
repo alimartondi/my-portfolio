@@ -18,7 +18,7 @@ export default function AboutDetailScreen() {
               />
             </div>
           </Col>
-          <Col lg={7} className="c_about-detail-content mt-5">
+          <Col lg={7} className="c_about-detail-content mt-5 pl-xl-5">
             <h1 className="second-title">Sekilas Tentang Saya</h1>
             <p className="mt-4">
               Halo semua, nama lengkap Saya Ali Martondi, atau panggil saja Ali.
@@ -39,8 +39,8 @@ export default function AboutDetailScreen() {
             </p>
           </Col>
         </Row>
-        <Row className="mt-5 d-block d-md-flex align-items-center">
-          <Col lg={7}>
+        <Row className="mt-5 align-items-center">
+          <Col lg={7} className="c_about-detail-content pr-xl-5">
             <h1 className="second-title mb-4 mt-5">Bisa Sampai di Jakarta</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
@@ -68,11 +68,15 @@ export default function AboutDetailScreen() {
             />
           </Col>
         </Row>
-        <Row className="mt-5">
+        <Row className="mt-5 align-items-center">
           <Col lg={5}>
-            <img src="" alt="" />
+            <img
+              src="https://asset.kompas.com/crops/xqHrjDeSrtpVX7pHItSK-DMMWto=/0x0:780x390/750x500/data/photo/2016/10/05/1949010andre-ter-stegen780x390.jpg"
+              className="rounded-lg img-fluid"
+              alt=""
+            />
           </Col>
-          <Col lg={7}>
+          <Col lg={7} className="c_about-detail-content pl-xl-5">
             <h1 className="second-title mb-4 mt-5">Kenapa Programmer?</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
@@ -91,6 +95,35 @@ export default function AboutDetailScreen() {
               asperiores blanditiis, sed non accusamus minus, laborum repellat
               molestiae voluptatem similique officia culpa?
             </p>
+          </Col>
+        </Row>
+        <Row className="mt-5 align-items-center">
+          <Col lg={7} className="c_about-detail-content pr-xl-5">
+            <h1 className="second-title mb-4 mt-5">Almamater</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
+              mollitia quas itaque error consequuntur atque? Aliquam nesciunt
+              molestias nulla illum quisquam itaque eaque minus dicta expedita
+              quos! Magni eum veritatis expedita molestiae pariatur quisquam
+              officia consequuntur rem itaque sed, voluptatem sequi facilis
+              voluptatibus iure assumenda odio.
+              <br />
+              <br />
+              At, veniam neque ducimus officiis nisi explicabo culpa provident
+              quia, inventore reprehenderit ab, quisquam voluptatem illum. Magni
+              voluptatem deleniti itaque cumque corporis eaque sapiente dolor
+              reprehenderit in delectus. Quibusdam, dolorum ea deleniti ipsam
+              veniam maiores soluta voluptate obcaecati voluptas autem
+              asperiores blanditiis, sed non accusamus minus, laborum repellat
+              molestiae voluptatem similique officia culpa?
+            </p>
+          </Col>
+          <Col lg={5}>
+            <img
+              src="https://lh3.googleusercontent.com/proxy/1tizUx3YPZFGiCIJDrLMw5jrm_ejWabONT1gc2vCJlgDrSqrWvS2DA4yJfjh0_X4bQjuY_xQ4loKDlEg-xoXbVS4IudbBfM7DZq1fJpoSg"
+              className="rounded-lg img-fluid"
+              alt=""
+            />
           </Col>
         </Row>
         <Row className="mt-5">

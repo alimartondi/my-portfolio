@@ -7,7 +7,7 @@ import AboutDetailScreen from "./components/AboutDetail";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter forceRefresh={true}>
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/about" component={AboutDetailScreen} />

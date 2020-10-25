@@ -354,7 +354,10 @@ li:hover {
 
 /* ===End Of Sevice Area=== */
 
+/* ===About Screen=== */
 
+
+/* ===End OF Abiut Screen */
 
 
 /* ===RESPONSIVE=== */
@@ -428,13 +431,7 @@ li:hover {
     padding-right: 32px;
     width: 360px;
   }
-  .portfolio-card-wrap {
-    /* position: relative; */
-    /* height: auto; */
-    /* width: 340px; */
-    /* border-radius: 10px; */
-    /* overflow: hidden; */
-  }
+  
 
   /* .portfolio-card-wrap img {
     height: auto;
@@ -512,6 +509,13 @@ li:hover {
   .copyright-text {
     text-align: left;
   }
+
+
+
+  /* ===End Of Sevice Area=== */
+
+
+/* ===About Screen=== */
 }
 
 

@@ -5,6 +5,7 @@ import "../style/navbar.css";
 import Brand from "../image/web-brand1.svg";
 import Logo from "../image/logo.png";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { HashLink } from "react-router-hash-link";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -31,7 +32,7 @@ export default function NavBar() {
               <img src={Logo} alt="sidebar logo" />
             </div>
             <hr className="d-block d-sm-none text-center" />
-            <Link
+            <HashLink
               activeClass="active"
               to="about"
               smooth={true}
@@ -42,7 +43,7 @@ export default function NavBar() {
               onClick={showState}
             >
               Tentang Saya
-            </Link>
+            </HashLink>
             <Link
               activeClass="active"
               to="portfolio"
