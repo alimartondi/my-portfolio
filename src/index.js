@@ -10,6 +10,7 @@ ReactDOM.render(
     <BrowserRouter forceRefresh={true}>
       <Switch>
         <Route exact path="/" component={App} />
+        <Route exact path="/id" component={App} />
         <Route exact path="/about" component={AboutDetailScreen} />
         <Route>
           <h1 className="text-center">404 Not Found</h1>
