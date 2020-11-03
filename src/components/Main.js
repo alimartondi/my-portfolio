@@ -10,22 +10,24 @@ export default function mainSection() {
         <Container>
           <div className="hero-banner d-block d-md-flex justify-content-between">
             <div className="hero-content">
-              <h6>Hello, I am</h6>
+              <p className="description ml-1">Hello, I'm A</p>
               <h1 className="main-title">
                 Frontend
                 <br />
                 Developer
               </h1>
-              <p className="mt-4">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+              <p className="description mt-4 ml-1">
+                "Learning HTML and CSS is a lot more challenging than it used to
+                be. Responsive web design adds more layers of complexity to
+                design and develop websites." - Jacob Lett
               </p>
               <div className="hero-btn d-block d-md-flex text-center mt-5">
-                <Button variant="dark" className="main-button shadow-sm">
+                <Button
+                  href="mailto:alimartondi88@gmail.com"
+                  variant="dark"
+                  className="main-button shadow-sm ml-md-1"
+                >
                   Hire Me!
-                </Button>
-                <Button variant="dark" className="second-button shadow-sm">
-                  Download My CV!
                 </Button>
               </div>
             </div>

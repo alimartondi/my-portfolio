@@ -5,7 +5,7 @@ import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import Profil_pic from "../image/a__profil.jpg";
 import { Link } from "react-router-dom";
 
-export default function AboutScreen() {
+export default function () {
   return (
     <section className="about-area" id="about">
       <Container>

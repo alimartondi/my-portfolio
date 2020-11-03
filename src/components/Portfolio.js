@@ -10,14 +10,14 @@ export default function portFolioSection() {
     <section className="portfolio-area" id="portfolio">
       <Container>
         <Row>
-          <Col sm={12}>
+          <Col lg={12}>
             <h2 className="second-title">Portfolio</h2>
             <h5 className="third-title">Frontend</h5>
             <h5 className="subtitle">Website yang pernah saya buat</h5>
           </Col>
         </Row>
         <Row className="align-items-center">
-          <Col sm={5}>
+          <Col lg={5}>
             <h5>Infra Digital Foundation</h5>
             <p>
               Merupakan project pertama saya secara profesional, dibuat
@@ -31,8 +31,8 @@ export default function portFolioSection() {
               <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
             </a>
           </Col>
-          <Col sm={7}>
-            <div className="c_portfolio-front-end mb-4">
+          <Col lg={7}>
+            <div className="c_portfolio-frontend mb-4">
               <a href="https://foundation.infradigital.io/">
                 <img src={MacBook} alt="MacBook" className="img-fluid" />
               </a>
@@ -40,7 +40,7 @@ export default function portFolioSection() {
           </Col>
         </Row>
       </Container>
-      <Container className="">
+      <Container>
         <Row>
           <Col className="c_portfolio-ui mt-5">
             <h5 className="third-title">UI/UX Desain</h5>

@@ -109,7 +109,7 @@
   .nav-items {
     display: flex;
     flex-wrap: wrap;
-    width: 35%;
+    width: 38%;
     justify-content: space-between;
   }
 }

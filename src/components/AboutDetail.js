@@ -1,12 +1,22 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function AboutDetailScreen() {
   return (
     <section className="c_about-detail-area" id="about-detail">
-      <NavBar />
+      <div className="about-detail-header bg-light py-3 fixed-top">
+        <Container>
+          <Row>
+            <Col lg={12}>
+              <Link to="/">
+                <h2>Back</h2>
+              </Link>
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <Container>
         <Row className="align-items-center pt-5">
           <Col lg={5}>

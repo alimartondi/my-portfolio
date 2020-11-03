@@ -28,7 +28,7 @@
 
 /* ===About Area=== */
 .about-area {
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .about-card{
@@ -150,16 +150,23 @@
 
 /* ===Portfolio Area=== */
 .portfolio-area{
-  margin-top: 30px;
+  margin-top: 45px;
+}
+
+.c_portfolio-frontend{
+  order: -1;
+  margin-top: 50px;
 }
 
 .slick-slide:focus {
   outline: none;
 }
+
 .slick-slide{
   padding-right: 16px;
-  width: 300px;
+  width: 320px;
 }
+
 .slick-slider .slick-list {
   padding:8px;
 }
@@ -219,13 +226,11 @@
 }
 
 @media (max-width: 375px) {
-  /* .portfolio-card-wrap img {
-    height: 160px;
+  .slick-slide{
+    max-width: 280px;
   }
 
-  .portfolio-card-wrap {
-   width: 280px;
-  } */
+  
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -319,6 +324,9 @@ li:hover {
 
 
 /* ===Servie Area=== */
+.service-area{
+  margin-top: 63px;
+}
 .service-items {
   justify-content: center;
 }
@@ -522,5 +530,11 @@ li:hover {
 @media (min-width: 576px) and (max-width: 768px) {
   .hero-content {
     padding-top: 120px;
+  }
+
+
+
+  .slick-slide{
+    max-width: 500px;
   }
 }

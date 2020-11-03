@@ -5,7 +5,6 @@ import "../style/navbar.css";
 import Brand from "../image/web-brand1.svg";
 import Logo from "../image/logo.png";
 import { Link, animateScroll as scroll } from "react-scroll";
-// import { Link as Rot } from "react-router-dom";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -37,7 +36,7 @@ export default function NavBar() {
               to="about"
               smooth={true}
               spy={true}
-              offset={-80}
+              offset={-100}
               duration={500}
               className="nav-link"
               onClick={showState}
@@ -49,7 +48,7 @@ export default function NavBar() {
               to="portfolio"
               smooth={true}
               spy={true}
-              offset={-80}
+              offset={-100}
               duration={500}
               className="nav-link"
               onClick={showState}
@@ -61,16 +60,25 @@ export default function NavBar() {
               to="service"
               smooth={true}
               spy={true}
-              offset={-80}
+              offset={-100}
               duration={500}
               className="nav-link"
               onClick={showState}
             >
               Layanan
             </Link>
-            <a className="nav-link" href="/">
+            <Link
+              activeClass="active"
+              to="footer"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              duration={500}
+              className="nav-link"
+              onClick={showState}
+            >
               Kontak
-            </a>
+            </Link>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}

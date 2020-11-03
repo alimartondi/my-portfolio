@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slick2 from "../image/slick2.png";
 import Slide from "../image/slide-portfolio.png";
-import { Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 export default class PortfolioSlider extends Component {
   render() {

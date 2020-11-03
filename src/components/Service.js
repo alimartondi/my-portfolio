@@ -31,7 +31,7 @@ export default function ServiceSection() {
     <section className="service-area" id="service">
       <Container>
         <Row className="justify-content-end">
-          <Col lg={6} className="text-right mt-5">
+          <Col lg={6} className="text-right">
             <h2 className="second-title">Layanan</h2>
             <h5 className="subtitle">Apa yang saya kerjakan?</h5>
           </Col>
