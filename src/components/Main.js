@@ -10,16 +10,16 @@ export default function mainSection() {
         <Container>
           <div className="hero-banner d-block d-md-flex justify-content-between">
             <div className="hero-content">
-              <p className="description ml-1">Hello, I'm A</p>
+              <p className="description ml-1">Hallo, Saya Ali Martondi</p>
               <h1 className="main-title">
                 Frontend
                 <br />
                 Developer
               </h1>
               <p className="description mt-4 ml-1">
-                "Learning HTML and CSS is a lot more challenging than it used to
-                be. Responsive web design adds more layers of complexity to
-                design and develop websites." - Jacob Lett
+                Lulusan S1 Teknik Informatika Nusa Mandiri Jakarta tahun 2020,
+                familiar dengan React dan Bootstrap, bisa bekerja secara tim
+                maupun individu. Saya berasal dari Mandailing Sumatera Utara.
               </p>
               <div className="hero-btn d-block d-md-flex text-center mt-5">
                 <Button
@@ -28,6 +28,9 @@ export default function mainSection() {
                   className="main-button shadow-sm ml-md-1"
                 >
                   Hire Me!
+                </Button>
+                <Button variant="none" className="second-button">
+                  Download My CV!
                 </Button>
               </div>
             </div>

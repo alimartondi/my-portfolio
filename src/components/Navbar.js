@@ -4,7 +4,7 @@ import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/web-brand1.svg";
 import Logo from "../image/logo.png";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -13,72 +13,50 @@ export default function NavBar() {
 
   const isOnTop = useScrollHandler();
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
-  const showState = () => setState(!state);
-  // const activeLink = () => setActiveLink(!activeLink);
   return (
     <header className="header-area" id="header">
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-brand">
-            <img src={Brand} alt="Logo" onClick={scrollToTop} />
+            <Link to="/">
+              <img src={Brand} alt="Logo" />
+            </Link>
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
-            <div className="sidebar-brand text-center mt-5 d-block d-sm-none">
-              <img src={Logo} alt="sidebar logo" />
+            <div className="sidebar-brand text-center mt-5 d-block d-xl-none">
+              <Link to="/">
+                <img src={Logo} alt="sidebar logo" />
+              </Link>
             </div>
-            <hr className="d-block d-sm-none text-center" />
-            <Link
-              activeClass="active"
-              to="about"
-              smooth={true}
-              spy={true}
-              offset={-100}
-              duration={500}
+            <hr className="d-block d-xl-none text-center" />
+            <NavLink
+              to="/about"
               className="nav-link"
-              onClick={showState}
+              activeClassName="selected"
             >
               Tentang Saya
-            </Link>
-            <Link
-              activeClass="active"
-              to="portfolio"
-              smooth={true}
-              spy={true}
-              offset={-100}
-              duration={500}
+            </NavLink>
+            <NavLink
+              to="/portfolio"
               className="nav-link"
-              onClick={showState}
+              activeClassName="selected"
             >
               Portofolio
-            </Link>
-            <Link
-              activeClass="active"
-              to="service"
-              smooth={true}
-              spy={true}
-              offset={-100}
-              duration={500}
+            </NavLink>
+            <NavLink
+              to="/about"
               className="nav-link"
-              onClick={showState}
+              activeClassName="selected"
             >
-              Layanan
-            </Link>
-            <Link
-              activeClass="active"
-              to="footer"
-              smooth={true}
-              spy={true}
-              offset={-100}
-              duration={500}
+              Project
+            </NavLink>
+            <a
+              href="mailto:alimartondi88@gmail.com"
               className="nav-link"
-              onClick={showState}
+              activeClassName="selected"
             >
               Kontak
-            </Link>
+            </a>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}

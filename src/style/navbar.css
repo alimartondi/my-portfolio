@@ -26,6 +26,7 @@
 
 .nav-items {
   display: flex;
+  align-items: center;
   flex-direction: column;
   position: absolute;
   font-size: 1rem;
@@ -51,7 +52,7 @@
 }
 
 .nav-items hr {
-  width: 90%;
+  width: 94%;
   height: 0.5px;
   background-color: var(--main-light);
   margin: 25px auto;
@@ -93,7 +94,6 @@
   top: 0 !important;
 }
 
-
 .burger_hamburger-inner__14XT2::before {
   top: -7px !important;
 }
@@ -101,34 +101,13 @@
 /* ==End of Humberger Menu Icon== */
 
 /* ===NAVBAR RESPONSIVE=== */
-@media (min-width: 768px) {
+
+
+@media (min-width: 767.98px) {
   .navbar-brand img {
     max-height: 100%;
   }
 
-  .nav-items {
-    display: flex;
-    flex-wrap: wrap;
-    width: 38%;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .nav-items {
-    display: flex;
-    flex-wrap: wrap;
-    width: 45%;
-    justify-content: space-between;
-  }
-
-  .about-card{
-    display: flex;
-    text-align: center;
-  }
-}
-
-@media (min-width: 576px) {
   .navbar {
     height: 80px;
     transition: ease-in-out 0.4s;
@@ -137,9 +116,12 @@
   .nav-items {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     left: 0;
     height: 100%;
+    width: 35%;
+    justify-content: space-between;
   }
 
   .nav-items.active {
@@ -157,13 +139,16 @@
     transition-delay: 0s;
   }
 
-  .nav-link:hover {
-    color: #0abab5;
+  .nav-link.selected,
+  .nav-link:active {
+    font-weight: 500;
+    color: var(--main-blue) !important;
   }
 
-  .nav-link.active,
-  .nav-link:active {
-    color: var(--main-blue) !important;
+  .nav-btn.second-button {
+    max-width: 90px;
+    font-size: 15px;
+    padding: 4px;
   }
 
   .navbar.scrolled {
@@ -176,4 +161,6 @@
   .nav-items hr {
     display: none !important;
   }
+  
 }
+

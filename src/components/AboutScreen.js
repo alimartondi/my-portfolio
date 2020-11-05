@@ -1,26 +1,16 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import Footer from "./Footer";
+import NavBar from "./Navbar";
 
-export default function AboutDetailScreen() {
+export default function AboutScreen() {
   return (
-    <section className="c_about-detail-area" id="about-detail">
-      <div className="about-detail-header bg-light py-3 fixed-top">
-        <Container>
-          <Row>
-            <Col lg={12}>
-              <Link to="/">
-                <h2>Back</h2>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+    <section className="c_about-screen-area" id="about-screen">
+      <NavBar />
       <Container>
-        <Row className="align-items-center pt-5">
-          <Col lg={5}>
-            <div className="about-detail-image">
+        <Row className="c_about-me align-items-center">
+          <Col lg={5} className="">
+            <div className="about-det-image">
               <img
                 src="https://bolaskor.com/media/83/22/24/832224ffd0b632e21bebba8ab1218558_754x.jpg"
                 className="rounded-lg img-fluid"
@@ -28,7 +18,7 @@ export default function AboutDetailScreen() {
               />
             </div>
           </Col>
-          <Col lg={7} className="c_about-detail-content mt-5 pl-xl-5">
+          <Col lg={7} className="c_about-screen-content mt-5 pl-xl-5">
             <h1 className="second-title">Sekilas Tentang Saya</h1>
             <p className="mt-4">
               Halo semua, nama lengkap Saya Ali Martondi, atau panggil saja Ali.
@@ -50,7 +40,7 @@ export default function AboutDetailScreen() {
           </Col>
         </Row>
         <Row className="mt-5 align-items-center">
-          <Col lg={7} className="c_about-detail-content pr-xl-5">
+          <Col lg={7} className="c_about-screen-content pr-xl-5">
             <h1 className="second-title mb-4 mt-5">Bisa Sampai di Jakarta</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
@@ -86,7 +76,7 @@ export default function AboutDetailScreen() {
               alt=""
             />
           </Col>
-          <Col lg={7} className="c_about-detail-content pl-xl-5">
+          <Col lg={7} className="c_about-screen-content pl-xl-5">
             <h1 className="second-title mb-4 mt-5">Kenapa Programmer?</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
@@ -108,7 +98,7 @@ export default function AboutDetailScreen() {
           </Col>
         </Row>
         <Row className="mt-5 align-items-center">
-          <Col lg={7} className="c_about-detail-content pr-xl-5">
+          <Col lg={7} className="c_about-screen-content pr-xl-5">
             <h1 className="second-title mb-4 mt-5">Almamater</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
