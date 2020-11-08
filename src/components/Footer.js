@@ -1,9 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import FooterBrand from "../image/web-brand.png";
-import Logo from "../image/logo.png";
-import BatubaraWhite from "../image/batubara_white.png";
-import BatubaraWhiteMobile from "../image/batubara_white_xs.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -24,18 +20,18 @@ export default function footerSection() {
           <Row>
             <Col lg={12} className="footer-items text-center">
               <div className="footer-brand mt-5">
-                <img
-                  src={BatubaraWhite}
+                {/* <img
+                  src={}
                   alt="footer-logo"
                   onClick={scrollToTop}
                   className="d-none d-md-block mx-auto"
                 />
                 <img
-                  src={BatubaraWhiteMobile}
+                  src={}
                   alt="footer-logo"
                   onClick={scrollToTop}
                   className="d-block d-md-none mx-auto"
-                />
+                /> */}
               </div>
 
               <h5 className="footer-email mt-3 mt-md-5">
