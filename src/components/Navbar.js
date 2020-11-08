@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
-import Brand from "../image/batubara_org.png";
+import Brand from "../image/met.svg";
 import BrandMobile from "../image/batubara_org_xs.png";
 import Logo from "../image/logo.png";
 import { Link, NavLink } from "react-router-dom";
@@ -20,8 +20,8 @@ export default function NavBar() {
         <Container>
           <div className="navbar-brand">
             <Link to="/">
-              <img src={Brand} alt="Logo" className="d-none d-md-block" />
-              <img src={BrandMobile} alt="Logo" className="d-block d-md-none" />
+              <img src={Brand} alt="Logo" className="img-fluid" />
+              {/* <img src={BrandMobile} alt="Logo" className="d-block d-md-none" /> */}
             </Link>
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
