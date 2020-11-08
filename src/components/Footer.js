@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 // import FooterBrand from "../image/web-brand.png";
 import Logo from "../image/logo.png";
 import BatubaraWhite from "../image/batubara_white.png";
+import BatubaraWhiteMobile from "../image/batubara_white_xs.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,12 +26,24 @@ export default function footerSection() {
               <div className="footer-brand mt-5">
                 <img
                   src={BatubaraWhite}
-                  alt="web-brand"
+                  alt="footer-logo"
                   onClick={scrollToTop}
+                  className="d-none d-md-block mx-auto"
+                />
+                <img
+                  src={BatubaraWhiteMobile}
+                  alt="footer-logo"
+                  onClick={scrollToTop}
+                  className="d-block d-md-none mx-auto"
                 />
               </div>
 
-              <div className="social-media d-flex justify-content-around mt-5 px-5">
+              <h5 className="footer-email mt-3 mt-md-5">
+                <a href="mailto:alimartondi88@gmail.com">
+                  alimartondi88@gmail.com
+                </a>
+              </h5>
+              <div className="social-media d-flex justify-content-around mt-3 px-5">
                 <a
                   href="https://www.instagram.com/alianda_batubara/"
                   className="footer-social-media"
@@ -56,12 +69,6 @@ export default function footerSection() {
                   <FontAwesomeIcon icon={faWhatsapp} />
                 </a>
               </div>
-
-              <h5 className="footer-email mt-3">
-                <a href="mailto:alimartondi88@gmail.com">
-                  alimartondi88@gmail.com
-                </a>
-              </h5>
             </Col>
           </Row>
 
