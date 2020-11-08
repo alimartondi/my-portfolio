@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/web-brand1.svg";
+import Brand1 from "../image/batubara_org.png";
 import Logo from "../image/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
@@ -19,7 +20,11 @@ export default function NavBar() {
         <Container>
           <div className="navbar-brand">
             <Link to="/">
-              <img src={Brand} alt="Logo" />
+              <img
+                src={Brand1}
+                alt="Logo"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
             </Link>
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
@@ -42,13 +47,6 @@ export default function NavBar() {
               activeClassName="selected"
             >
               Portofolio
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="nav-link"
-              activeClassName="selected"
-            >
-              Project
             </NavLink>
             <a
               href="mailto:alimartondi88@gmail.com"

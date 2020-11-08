@@ -29,7 +29,7 @@ export default function mainSection() {
                 >
                   Hire Me!
                 </Button>
-                <Button variant="none" className="second-button">
+                <Button variant="outline-dark" className="second-button">
                   Download My CV!
                 </Button>
               </div>

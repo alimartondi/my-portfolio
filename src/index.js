@@ -9,7 +9,7 @@ import NotFoundScreen from "./components/NotFound";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter forceRefresh>
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/about" component={AboutScreen} />
