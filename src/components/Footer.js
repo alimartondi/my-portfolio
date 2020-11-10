@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
+import BatubaraWhite from "../image/batubara_white.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -20,21 +21,14 @@ export default function footerSection() {
           <Row>
             <Col lg={12} className="footer-items text-center">
               <div className="footer-brand mt-5">
-                {/* <img
-                  src={}
-                  alt="footer-logo"
-                  onClick={scrollToTop}
-                  className="d-none d-md-block mx-auto"
-                />
                 <img
-                  src={}
+                  src={BatubaraWhite}
                   alt="footer-logo"
                   onClick={scrollToTop}
-                  className="d-block d-md-none mx-auto"
-                /> */}
+                />
               </div>
 
-              <h5 className="footer-email mt-3 mt-md-5">
+              <h5 className="footer-email mt-4 mt-md-5">
                 <a href="mailto:alimartondi88@gmail.com">
                   alimartondi88@gmail.com
                 </a>

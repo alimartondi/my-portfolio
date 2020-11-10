@@ -11,25 +11,25 @@ export default function portFolioSection() {
       <Container>
         <Row>
           <Col lg={12}>
-            <h2 className="second-title">Portfolio</h2>
-            <h5 className="third-title">Frontend</h5>
-            <h5 className="subtitle">Website yang pernah saya buat</h5>
+            <h2 className="second-title text-center">Portofolio</h2>
           </Col>
         </Row>
         <Row className="align-items-center">
           <Col lg={5}>
-            <h5>Infra Digital Foundation</h5>
+            <h3 className="third-title mb-4">Website Company Profile</h3>
             <p>
-              Merupakan project pertama saya secara profesional, dibuat
-              menggunakan react dan react-bootstrap. Saya mengerjakan projek ini
-              bersama satu orang teman saya teman saya, dan kami mengerjakan
-              khusus di frontend-nya saja, sedangkan design-nya sudah di
-              sediakan klien.
+              Merupakan hasil kolaborasi dengan seorang teman, sebuah website
+              company profile untuk InfraDigital Foundation. Dibuat menggunakan
+              Gatsby dan Bootstap, dengan UI yang sudah disipakan oleh klien.
             </p>
-            <a href="/">
-              Baca selengkapnya{" "}
-              <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
-            </a>
+            <Row>
+              <Col className="mt-5">
+                <a href="/">
+                  Baca selengkapnya{" "}
+                  <FontAwesomeIcon className="ml-2" icon={faArrowRight} />
+                </a>
+              </Col>
+            </Row>
           </Col>
           <Col lg={7}>
             <div className="c_portfolio-frontend mb-4">

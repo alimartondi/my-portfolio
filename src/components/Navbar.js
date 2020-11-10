@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/batubara_org.svg";
+import BatubaraWhite from "../image/batubara_white.svg";
 import Logo from "../image/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
@@ -19,19 +20,13 @@ export default function NavBar() {
         <Container>
           <div className="navbar-brand">
             <Link to="/">
-              <img
-                src={Brand}
-                alt="Logo"
-                // srcset={Brand}
-                // sizes="(min-width: 768px) 50vw, 100vw"
-              />
-              {/* <img src={BrandMobile} alt="Logo" className="d-block d-md-none" /> */}
+              <img src={Brand} alt="Logo" />
             </Link>
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
             <div className="sidebar-brand text-center mt-5 d-block d-xl-none">
               <Link to="/">
-                <img src={Logo} alt="sidebar logo" />
+                <img src={BatubaraWhite} alt="sidebar logo" />
               </Link>
             </div>
             <hr className="d-block d-xl-none text-center" />

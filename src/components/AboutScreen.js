@@ -49,10 +49,8 @@ export default function AboutScreen() {
           </Col>
         </Row>
         <Row className="mt-4 align-items-center">
-          <Col lg={7} className="c_about-screen-content pl-xl-5 order-md-2">
-            <h1 className="second-title mb-4 mt-2 order-md-2">
-              Kenapa Programmer?
-            </h1>
+          <Col lg={7} className="c_about-screen-content pl-xl-5 order-xl-2">
+            <h1 className="second-title mb-4 mt-2">Kenapa Programmer?</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
               mollitia quas itaque error consequuntur atque? Aliquam nesciunt
