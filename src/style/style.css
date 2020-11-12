@@ -64,11 +64,7 @@
   margin: 10px auto 15px;
 }
 
-.c__card-link{
-  font-size: 16px;
-  font-weight: 400;
-  transition: all 3s ease-in-out;
-}
+
 
 .about-profile .card-image img {
   height: 250px;
@@ -102,38 +98,7 @@
   line-height: 1.8rem;
 }
 
-.information-link {
-  font-size: 18px;
-  line-height: 1.33;
-  color: var(--main-blue) !important;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  width: auto;
-  display: inline-block;
-}
 
-.information-link:after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 348px);
-  height: 2px;
-  background-color: var(--main-blue);
-  visibility: hidden;
-  bottom: -2px;
-  left: 0;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: left center;
-  transform-origin: left center;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.information-link:hover:after {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  visibility: visible;
-}
 
 @media(min-width: 1140px){
   .about-card{
@@ -176,25 +141,89 @@
 
 .c_portfolio-frontend{
   order: -1;
-  margin-top: 50px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #cfd0d0;
 }
 
-.slick-slide:focus {
+.c_portfolio-frontend:hover{
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.2);
+  box-shadow: 0 1px 4px rgba(34,25,25,0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(34,25,25,0.2);
+}
+
+.c_portfolio-link{
+  color: var(--main-blue) !important;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  width: auto;
+  display: inline-block;
+}
+
+.c_portfolio-link:after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 300px);
+  height: 2px;
+  background-color: var(--main-blue);
+  visibility: hidden;
+  bottom: -2px;
+  left: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c_portfolio-link:hover:after {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+/* .slick-slide:focus {
   outline: none;
 }
 
 .slick-slide{
   padding-right: 16px;
-  width: 320px;
+  width: 325px;
+} */
+
+.slick-list, .slick-slider{
+  position: relative;
+  display: block;
 }
 
-.slick-slider .slick-list {
-  padding:8px;
+.slick-list{
+  padding: 8px;
 }
+
+.slick-slider{
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 
 .portfolio-card {
-  position: relative;
-  /* padding-left: 1rem; */
+  /* position: relative; */
+  /* padding-left: 15px; */
 }
 
 .portfolio-card-wrap {
@@ -217,22 +246,6 @@
   transition: all .3s;
   height: 100%;
   overflow: hidden;
-  /* padding-right: 16px; */
-
-
-  /* position: relative;
-  background-color: var(--main-light); */
-  /* margin-right: 0.5rem; */
-  /* height: 180px; */
-  /* max-width: none; */
-  /* border-radius: 10px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,.2); */
-}
-
-.c-card__body{
-  display: none;
 }
 
 .portfolio-card-wrap img {
@@ -246,23 +259,22 @@
   max-width: 100%;
 }
 
-@media (max-width: 375px) {
-  .slick-slide{
-    max-width: 280px;
+@media screen and (width: 768px) {
+  .slick-slider {
+    width: calc(100% + 16px)!important;
+    left: -16px!important;
   }
-
-  
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  /* .portfolio-card-wrap {
-    height: 235px;
+@media (max-width: 768px){
+  .slick-slider {
+    position: relative;
+    right: 0;
+    width: calc(100% + 32px) !important;
+    left: -16px !important;
   }
-
-  .portfolio-card-wrap img {
-    height: 290px;
-  } */
 }
+
 
 /* ===End Of Portfolio Area */
 
@@ -370,10 +382,30 @@
 
 /* ===End Of Sevice Area=== */
 
-/* ===About Screen=== */
+/* ===Tools Section=== */
+.tools-card{
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 10px;
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.2);
+  box-shadow: 0 1px 4px rgba(34,25,25,0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(34,25,25,0.2);
+  padding: 20px;
+}
+.tools-card-header{
+  background-color: var(--main-blue);
+  margin: auto;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 
 
-/* ===End OF Abiut Screen */
+/* ===End OF Tools Section */
 
 
 /* ===RESPONSIVE=== */
@@ -447,10 +479,10 @@
   .slick-slider .slick-list {
     padding: 16px 16px 24px;
   }
-  .slick-slide{
+  /* .slick-slide{
     padding-right: 32px;
     width: 360px;
-  }
+  } */
   
 
   /* .portfolio-card-wrap img {
@@ -458,10 +490,10 @@
     width: 100%;
   } */
   
-  .c-card__body{
+  /* .c-card-body{
     display: block;
     padding: 16px;
-  }
+  } */
 
   .slick-prev,
   .slick-next {

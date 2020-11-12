@@ -4,12 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slick2 from "../image/slick2.png";
 import Slide from "../image/slide-portfolio.png";
+import Portfolio from "../image/portfolio.png";
+import TheHouse from "../image/the_house.png";
 import { Col } from "react-bootstrap";
 
 export default class PortfolioSlider extends Component {
   render() {
     const settings = {
-      // className: "portfolio-slider",
       dots: true,
       infinite: false,
       speed: 500,
@@ -17,26 +18,25 @@ export default class PortfolioSlider extends Component {
       slidesToScroll: 1,
       arrows: true,
       draggable: true,
-      useCss: false,
-      variableWidth: true,
       responsive: [
-        // {
-        //   breakpoint: 1024,
-        //   settings: {
-        //     arrows: false,
-        //     slidesToShow: 2,
-        //     slidesToScroll: 1,
-        //   },
-        // },
         {
-          breakpoint: 600,
+          breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             arrows: false,
           },
         },
         {
-          breakpoint: 500,
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+
+        {
+          breakpoint: 480,
           settings: {
             slidesToShow: 1,
             arrows: false,
@@ -47,7 +47,7 @@ export default class PortfolioSlider extends Component {
     return (
       <Slider {...settings} className="">
         {contents.map((content, i) => (
-          <Col sm={12} key={i}>
+          <Col lg={12} className="portfolio-slider pr-2 pr-md-4" key={i}>
             <div className="portfolio-card-wrap">
               <div className="c-card__img">
                 <img
@@ -56,7 +56,7 @@ export default class PortfolioSlider extends Component {
                   alt={content.alt}
                 ></img>
               </div>
-              <p className="c-card__body">
+              <p className="c-card-body d-none d-md-block p-4">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
                 tempora ipsam doloribus numquam facere soluta esse! Dolor
                 dolores qui temporibus iure eaque soluta molestiae. Quisquam?
@@ -71,11 +71,11 @@ export default class PortfolioSlider extends Component {
 
 const contents = [
   {
-    image: Slide,
+    image: Portfolio,
     alt: "Slick Slider Image",
   },
   {
-    image: Slick2,
+    image: TheHouse,
     alt: "Slick Slider Image",
   },
   {

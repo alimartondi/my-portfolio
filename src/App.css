@@ -146,24 +146,26 @@ body {
 
 .second-title {
     color: var(--main-dark);
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
 }
 .third-title {
     color:var(--main-dark);
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .subtitle {
     color: var(--main-dark);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
+    letter-spacing: -1px;
 }
 
 .description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
+    letter-spacing: -0.1px;
 }
 
 .card-title {
@@ -187,8 +189,15 @@ body {
     }
 
     .second-title {
-        font-size: 35px;
+        font-size: 36px;
+        font-weight: 700;
     }
+
+    .third-title{
+        font-size: 32px;
+        font-weight: 600;
+    }
+
     .description{
         font-size: 1rem;
     }

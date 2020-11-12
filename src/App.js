@@ -6,6 +6,7 @@ import PortFolioSection from "./components/Portfolio";
 import AboutSection from "./components/About";
 import ServiceSection from "./components/Service";
 import FooterSection from "./components/Footer";
+import ToolsSection from "./components/ToolsSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <PortFolioSection />
       {/* <AboutSection /> */}
       <ServiceSection />
+      <ToolsSection />
       <FooterSection />
     </div>
   );
