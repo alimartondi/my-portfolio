@@ -4,7 +4,6 @@ import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/batubara_org.svg";
 import BatubaraWhite from "../image/batubara_white.svg";
-import Logo from "../image/logo.png";
 import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
