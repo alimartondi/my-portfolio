@@ -1,16 +1,16 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Row, Col, Container } from "react-bootstrap";
-import Slick from "./Slick";
+import { Row, Col, Container, Card } from "react-bootstrap";
 import Idf from "../image/idf__mockup.jpg";
+import House from "../image/the_house.png";
+import Gowes from "../image/gowes.png";
+import Coffe from "../image/coffe.png";
 
-export default function portFolioSection() {
+export default function portfolioSection() {
   return (
     <section className="portfolio-area" id="portfolio">
       <Container>
         <Row>
-          <Col lg={12} className="portfolio-content text-center">
+          <Col lg={12} className="portfolio-intro text-center">
             <h2 className="second-title">Portofolio</h2>
             <p className="description px-2">
               Website dan desain web yang pernah saya buat
@@ -19,7 +19,7 @@ export default function portFolioSection() {
         </Row>
         <Row className="mt-5">
           <Col lg={6} className="order-xl-2">
-            <h3 className="third-title d-block d-xl-none mb-4">
+            <h3 className="third-title d-block d-lg-none mb-4">
               InfraDigital Foundation
             </h3>
             <div className="c_portfolio-frontend mb-4">
@@ -28,9 +28,9 @@ export default function portFolioSection() {
               </a>
             </div>
           </Col>
-          <Col lg={6} className="pr-md-5">
+          <Col lg={6} className="portfolio-content pr-xl-5 pl-lg-5 pl-xl-0">
             <p className="subtitle">Website Company Profile</p>
-            <h3 className="third-title mb-4 d-none d-xl-block">
+            <h3 className="third-title mb-4 d-none d-lg-block">
               InfraDigital Foundation
             </h3>
             <p className="description">
@@ -38,27 +38,59 @@ export default function portFolioSection() {
               company profile untuk InfraDigital Foundation. Dibuat menggunakan
               Gatsby dan Bootstrap, dengan UI yang sudah disipakan oleh klien.
             </p>
-            <Row>
-              <Col className="mt-xl-5">
-                <a className="c_portfolio-link" href="/">
-                  Baca selengkapnya{" "}
-                  <FontAwesomeIcon className="ml-1" icon={faArrowRight} />
-                </a>
-              </Col>
-            </Row>
           </Col>
         </Row>
       </Container>
-      <Container className="container-fluid full-width">
-        <Row>
-          <Col className="c_portfolio-ui mt-5">
-            <h5 className="third-title">Web Desain</h5>
+      <Container>
+        <Row className="web-design-intro mt-5">
+          <Col lg={12}>
+            <p className="subtitle">Desain Web</p>
+            <h3 className="third-title">Desain Landing Page</h3>
           </Col>
-          <Col lg={12} className="portfolio-card mt-2 mt-md-5">
-            <Slick />
+        </Row>
+        <Row>
+          <Col lg={12} className="web-design-items">
+            <div className="web-design-grid">
+              {webDesignContents.map((content, i) => (
+                <Card className="web-design-card" key={i}>
+                  <Card.Header>
+                    <img
+                      src={content.image}
+                      alt={content.alt}
+                      className="img-fluid"
+                    />
+                  </Card.Header>
+                  <Card.Body>
+                    <p className="subtitle">{content.title}</p>
+                    <p>{content.body}</p>
+                  </Card.Body>
+                </Card>
+              ))}
+            </div>
           </Col>
         </Row>
       </Container>
     </section>
   );
 }
+
+const webDesignContents = [
+  {
+    image: House,
+    alt: "Web Design",
+    title: "Landing Page",
+    body: "House",
+  },
+  {
+    image: Coffe,
+    alt: "Web Design",
+    title: "Landing Page",
+    body: "Coffee",
+  },
+  {
+    image: Gowes,
+    alt: "Web Design",
+    title: "Landing Page",
+    body: "Gowes",
+  },
+];

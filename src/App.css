@@ -39,7 +39,7 @@ img{
     -moz-user-select: none;
 }
 
-.col,
+/* .col,
 .col-1,
 .col-10,
 .col-11,
@@ -113,7 +113,7 @@ img{
     width: 100%;
     padding-right: 0px;
     padding-left: 0;
-}
+} */
 
 .col-lg-12 {
     -webkit-box-flex: 0;
@@ -171,7 +171,6 @@ body {
 .card-title {
     font-size: 24px;
     font-weight: 600;
-    color: var(--main-dark);
 }
 
 .card-description {

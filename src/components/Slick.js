@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slick2 from "../image/slick2.png";
-import Slide from "../image/slide-portfolio.png";
-import Portfolio from "../image/portfolio.png";
 import TheHouse from "../image/the_house.png";
 import { Col } from "react-bootstrap";
 
@@ -70,20 +67,20 @@ export default class PortfolioSlider extends Component {
 }
 
 const contents = [
-  {
-    image: Portfolio,
-    alt: "Slick Slider Image",
-  },
-  {
-    image: TheHouse,
-    alt: "Slick Slider Image",
-  },
-  {
-    image: Slide,
-    alt: "Slick Slider Image",
-  },
-  {
-    image: Slick2,
-    alt: "Slick Slider Image",
-  },
+  // {
+  //   image: Portfolio,
+  //   alt: "Slick Slider Image",
+  // },
+  // {
+  //   image: TheHouse,
+  //   alt: "Slick Slider Image",
+  // },
+  // {
+  //   image: Slide,
+  //   alt: "Slick Slider Image",
+  // },
+  // {
+  //   image: Slick2,
+  //   alt: "Slick Slider Image",
+  // },
 ];

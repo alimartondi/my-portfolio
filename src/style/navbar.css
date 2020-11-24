@@ -39,7 +39,8 @@
 }
 
 .nav-items.active {
-  background-color: var(--main-blue);
+  background: rgb(10,186,181);
+background-image: linear-gradient(90deg, rgba(10,186,181,1) 0%, rgba(24,157,181,1) 100%);
   top: 0;
   left: 0;
   transition: all 0.3s ease;
