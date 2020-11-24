@@ -9,8 +9,7 @@ const contents = [
   {
     icon: faUserTie,
     title: "Personal Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci unde voluptate amet, hic aspernatur perspiciatis possimus ?",
+    description: "Website portfolio",
   },
   {
     icon: faBuilding,
