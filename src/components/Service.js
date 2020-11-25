@@ -1,27 +1,30 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBuilding } from "@fortawesome/free-solid-svg-icons";
-import { faUserTie } from "@fortawesome/free-solid-svg-icons";
-import { faStoreAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faEdit,
+  faBezierCurve,
+} from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col } from "react-bootstrap";
 
 const contents = [
   {
-    icon: faUserTie,
-    title: "Personal Website",
-    description: "Website portfolio",
+    icon: faCode,
+    title: "Frontend Developer",
+    description:
+      "Solusi untuk anda yang butuh website dengan tampilan yang menarik, User Friendly dan Responsive",
   },
   {
-    icon: faBuilding,
-    title: "Company Profile",
+    icon: faEdit,
+    title: "Web Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci unde voluptate amet, hic aspernatur perspiciatis possimus ?",
+      "Tidak punya desain website sendiri? saya bisa buatkan website mulai dari desain UI, banner maupun logo sesuai kebutuhan",
   },
   {
-    icon: faStoreAlt,
-    title: "Online Shop",
+    icon: faBezierCurve,
+    title: "Fullstack Developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci unde voluptate amet, hic aspernatur perspiciatis possimus ?",
+      "Atau butuh paket komplit untuk kebutuhan usaha anda, mulai dari website sampai aplikasi mobile? tim kami siap membantu",
   },
 ];
 

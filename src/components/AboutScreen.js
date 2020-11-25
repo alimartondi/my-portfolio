@@ -19,12 +19,18 @@ export default function AboutScreen() {
           <Col lg={7} className="c_about-screen-content mt-2 pl-xl-5">
             <h1 className="second-title mb-4">Sekilas Tentang Saya</h1>
             <p>
-              Halo semua, nama Saya Ali Martondi, panggil saja Ali. Saya berasal
-              dari Mandailing Natal, Sumatera Utara, lahir pada tanggal 11
-              Desember 1995, anak ketiga dari lima bersaudara.
+              Halo, nama saya Alimartondi biasa dipanggil Ali, lulusan S1 Teknik
+              Informatika Nusa Mandiri Jakarta pada tahun 2020, berasal dari
+              Mandailing - Sumatera Utara. Lahir pada tanggal 11 Desember 1995,
+              anak ketiga dari lima bersaudara, dan saya bermarga Batubara.
               <br />
               <br />
-              Saya asli Mandailing, marga saya batubara.
+              Tergolong telat, saya pertama kali kenal dunia programming di
+              bangku kuliah, bahasa yang pertama kali saya pelajari adalah
+              bahasa C++, kemudian Assembler, lanjut dengan Java dan berakhir
+              dengan PHP. Sayangnya semua itu belajar secara singkat, sebab
+              fokus jurusan saya adalah jaringan yang saya juga baru tau
+              belakangan.
             </p>
           </Col>
         </Row>
@@ -32,12 +38,13 @@ export default function AboutScreen() {
           <Col lg={7} className="c_about-screen-content pr-xl-5 mt-3 mt-md-4">
             <h1 className="second-title mb-4">Bisa Sampai di Jakarta</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni
-              mollitia quas itaque error consequuntur atque? Aliquam nesciunt
-              molestias nulla illum quisquam itaque eaque minus dicta expedita
-              quos! Magni eum veritatis expedita molestiae pariatur quisquam
-              officia consequuntur rem itaque sed, voluptatem sequi facilis
-              voluptatibus iure assumenda odio.
+              Tiba di Jakarta pertengahan tahun 2015, tujuan utama adalah kuliah
+              di jurusan komputer, tidak pilih-pilih kampus, yang penting bisa
+              kuliah dengan biaya sendiri tanpa nyusahin orangtua di kampung.
+              <br />
+              <br />
+              Tujuan saya ke Jakarta adalah kakak saya yang udah lebih dulu
+              kuliah di
             </p>
           </Col>
           <Col lg={5} className="mt-2">

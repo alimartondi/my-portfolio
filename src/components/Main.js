@@ -10,16 +10,17 @@ export default function mainSection() {
         <Container>
           <div className="hero-banner d-block d-md-flex justify-content-between">
             <div className="hero-content">
-              <p className="description ml-1">Hallo, Saya Ali Martondi</p>
+              <p className="description ml-1">Hallo, saya seorang</p>
               <h1 className="main-title">
                 Frontend
                 <br />
                 Developer
               </h1>
               <p className="description mt-4 ml-1">
-                Lulusan S1 Teknik Informatika Nusa Mandiri Jakarta tahun 2020,
-                familiar dengan React dan Bootstrap, bisa bekerja secara tim
-                maupun individu. Saya berasal dari Mandailing Sumatera Utara.
+                Lulusan Teknik Informatika Nusa Mandiri Jakarta. Nama saya
+                Alimartondi, saya berasal dari Mandailing - Sumatera Utara,
+                marga saya Batubara, selain ngoding saya juga menyukai Desain
+                Grafis dan Fotografi.
               </p>
               <div className="hero-btn d-block d-md-flex text-center mt-5">
                 <Button
