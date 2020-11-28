@@ -19,7 +19,7 @@ export default function mainSection() {
               <p className="description mt-4 ml-1">
                 Lulusan Teknik Informatika Nusa Mandiri Jakarta. Nama saya
                 Alimartondi, saya berasal dari Mandailing - Sumatera Utara,
-                marga saya Batubara, selain ngoding saya juga menyukai Desain
+                marga saya Batubara. Selain ngoding saya juga menyukai Desain
                 Grafis dan Fotografi.
               </p>
               <div className="hero-btn d-block d-md-flex text-center mt-5">

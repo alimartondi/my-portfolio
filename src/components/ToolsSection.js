@@ -22,10 +22,7 @@ export default function ToolsSection() {
           </Col>
         </Row>
         <Row>
-          <Col
-            lg={12}
-            className="d-flex flex-wrap justify-content-around justify-content-md-between"
-          >
+          <Col lg={12} className="d-flex flex-wrap justify-content-around">
             {toolsContents.map((content, i) => (
               <div className="tools-card mt-3" key={i}>
                 <div className="tools-card-header">

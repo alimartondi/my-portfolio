@@ -44,8 +44,8 @@ export default function portfolioSection() {
       <Container>
         <Row className="web-design-intro mt-5">
           <Col lg={12}>
-            <p className="subtitle">Desain Web</p>
-            <h3 className="third-title">Desain Landing Page</h3>
+            <p className="subtitle">Web Design</p>
+            <h3 className="third-title">Landing Page</h3>
           </Col>
         </Row>
         <Row>
@@ -60,10 +60,9 @@ export default function portfolioSection() {
                       className="img-fluid"
                     />
                   </Card.Header>
-                  <Card.Body>
+                  {/* <Card.Body>
                     <p className="subtitle">{content.title}</p>
-                    <p>{content.body}</p>
-                  </Card.Body>
+                  </Card.Body> */}
                 </Card>
               ))}
             </div>
@@ -79,18 +78,15 @@ const webDesignContents = [
     image: House,
     alt: "Web Design",
     title: "Landing Page",
-    body: "House",
   },
   {
     image: Coffe,
     alt: "Web Design",
     title: "Landing Page",
-    body: "Coffee",
   },
   {
     image: Gowes,
     alt: "Web Design",
     title: "Landing Page",
-    body: "Gowes",
   },
 ];
