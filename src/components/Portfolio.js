@@ -10,17 +10,19 @@ export default function portfolioSection() {
     <section className="portfolio-area" id="portfolio">
       <Container>
         <Row>
-          <Col lg={12} className="portfolio-intro text-center">
+          <Col lg={9} className="portfolio-intro text-center mx-auto">
             <h2 className="second-title">Portofolio</h2>
-            <p className="description px-2">
-              Website dan desain web yang pernah saya buat
+            <p className="description px-2 px-md-5">
+              Berikut beberapa website dan desain web yang pernah saya buat,
+              sebagian masih merupakan desain dan sebagian sudah menjadi website
+              yang utuh
             </p>
           </Col>
         </Row>
         <Row className="mt-5">
           <Col lg={6} className="order-xl-2">
             <h3 className="third-title d-block d-lg-none mb-4">
-              InfraDigital Foundation
+              Website Company Profile
             </h3>
             <div className="c_portfolio-frontend mb-4">
               <a href="https://foundation.infradigital.io/">
@@ -29,9 +31,9 @@ export default function portfolioSection() {
             </div>
           </Col>
           <Col lg={6} className="portfolio-content pr-xl-5 pl-lg-5 pl-xl-0">
-            <p className="subtitle">Website Company Profile</p>
+            <p className="subtitle">Frontend Development</p>
             <h3 className="third-title mb-4 d-none d-lg-block">
-              InfraDigital Foundation
+              Website Company Profile
             </h3>
             <p className="description">
               Merupakan hasil kolaborasi dengan seorang teman, sebuah website
@@ -41,15 +43,15 @@ export default function portfolioSection() {
           </Col>
         </Row>
       </Container>
-      <Container>
-        <Row className="web-design-intro mt-5">
+      <Container className="px-0">
+        <Row className="web-design-intro mt-5 p-3">
           <Col lg={12}>
             <p className="subtitle">Web Design</p>
             <h3 className="third-title">Landing Page</h3>
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="web-design-items">
+          <Col lg={12} className="web-design-items pl-3 pl-md-2">
             <div className="web-design-grid">
               {webDesignContents.map((content, i) => (
                 <Card className="web-design-card" key={i}>

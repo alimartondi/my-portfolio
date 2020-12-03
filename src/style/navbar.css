@@ -31,18 +31,17 @@
   position: absolute;
   font-size: 1rem;
   top: 0;
-  left: -100%;
+  right: -100%;
   height: 100vh;
   width: 100%;
   transition: all 0.3s ease;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .nav-items.active {
-  background: rgb(10,186,181);
-background-image: linear-gradient(90deg, rgba(10,186,181,1) 0%, rgba(24,157,181,1) 100%);
+  background-color: var(--main-blue);
   top: 0;
-  left: 0;
+  right: 0;
   transition: all 0.3s ease;
   opacity: 1;
 }
@@ -61,6 +60,11 @@ background-image: linear-gradient(90deg, rgba(10,186,181,1) 0%, rgba(24,157,181,
   background-color: var(--main-light);
   margin: 25px auto;
   border-radius: 4px;
+}
+
+.nav-items.active .btn-light{
+  font-weight: 600;
+  color: var(--main-blue);
 }
 
 
@@ -104,7 +108,7 @@ background-image: linear-gradient(90deg, rgba(10,186,181,1) 0%, rgba(24,157,181,
 /* ===NAVBAR RESPONSIVE=== */
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .navbar {
     height: 80px;
     transition: ease-in-out 0.4s;
@@ -122,7 +126,7 @@ background-image: linear-gradient(90deg, rgba(10,186,181,1) 0%, rgba(24,157,181,
     position: relative;
     left: 0;
     height: 100%;
-    width: 28%;
+    width: 45%;
     justify-content: space-between;
   }
 

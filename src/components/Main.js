@@ -17,10 +17,10 @@ export default function mainSection() {
                 Developer
               </h1>
               <p className="description mt-4 ml-1">
-                Lulusan Teknik Informatika Nusa Mandiri Jakarta. Nama saya
-                Alimartondi, saya berasal dari Mandailing - Sumatera Utara,
-                marga saya Batubara. Selain ngoding saya juga menyukai Desain
-                Grafis dan Fotografi.
+                Lulusan S1 Teknik Informatika Nusa Mandiri Jakarta, saya berasal
+                dari Mandailing Natal - Sumatera Utara, marga saya batubara.
+                Selain programming saya juga menyukai dunia Fotografi dan Desain
+                Grafis.
               </p>
               <div className="hero-btn d-block d-md-flex text-center mt-5">
                 <Button

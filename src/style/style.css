@@ -27,16 +27,12 @@
 
 
 /* ===About Area=== */
-.about-area {
-  margin-top: 45px;
-}
-
 .c_about-me{
   padding-top: 80px;
 }
 
 
-.about-card{
+/* .about-card{
   text-align: center;
   margin-top: 50px;
   padding-top: 30px;
@@ -44,7 +40,7 @@
   background-color: var(--main-light);
   border-radius: 10px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 .about-card-body {
   text-align: center;
@@ -100,7 +96,7 @@
 
 
 
-@media(min-width: 1140px){
+/* @media(min-width: 1140px){
   .about-card{
     padding: 15px;
   }
@@ -112,7 +108,7 @@
     margin-left: 0;
     margin: 30px 0;
   }
-}
+} */
 
 /* ===End Of About Area=== */
 
@@ -312,6 +308,13 @@
 /* ===End Of Portfolio Area */
 
 
+/* ===Contact Area=== */
+.contact-card{
+  background-color: var(--main-blue);
+  border-radius: 8px;
+}
+/* ===End of Contact Area=== */
+
 /* ===Footer Area=== */
 .footer-area {
   background: linear-gradient(to right, #40bcd1 0%, #189db5 100%);
@@ -478,10 +481,10 @@
 
 
 
-  .about-area {
+  /* .about-area {
     margin-top: 100px;
     flex-direction: column-reverse;
-  }
+  } */
   .about-card{
     margin-top: 10px;
 
@@ -491,10 +494,7 @@
     height: 235px;
   }
 
-  .about-content {
-    order: 1;
-    padding-left: 18px;
-  }
+  
   .about-content-desc{
     margin-top: 30px;
   }
@@ -564,7 +564,7 @@
   .service-items-grid,
   .web-design-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-gap: 2rem;
     padding: 16px 8px;
   }

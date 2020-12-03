@@ -10,9 +10,9 @@ import { Container, Row, Col } from "react-bootstrap";
 const contents = [
   {
     icon: faCode,
-    title: "Frontend Developer",
+    title: "Frontend Development",
     description:
-      "Solusi untuk anda yang butuh website dengan tampilan yang menarik, User Friendly dan Responsive",
+      "Solusi untuk anda yang butuh website dengan tampilan yang menarik, User Friendly dan Responsive menarik, User Friendly dan Responsive",
   },
   {
     icon: faEdit,
@@ -22,7 +22,7 @@ const contents = [
   },
   {
     icon: faBezierCurve,
-    title: "Fullstack Developer",
+    title: "Graphic Design",
     description:
       "Atau butuh paket komplit untuk kebutuhan usaha anda, mulai dari website sampai aplikasi mobile? tim kami siap membantu",
   },
@@ -31,7 +31,7 @@ const contents = [
 export default function ServiceSection() {
   return (
     <section className="service-area" id="service">
-      <Container>
+      <Container className="px-0">
         <Row className="justify-content-end">
           <Col lg={12} className="text-center">
             <h2 className="second-title">Layanan</h2>
@@ -39,7 +39,7 @@ export default function ServiceSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="service-items mt-4">
+          <Col lg={12} className="service-items mt-4 pl-3 pl-md-2">
             <div className="service-items-grid">
               {contents.map((content, i) => (
                 <div className="service-card" key={i}>

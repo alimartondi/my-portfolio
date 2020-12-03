@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/batubara_org.svg";
 import BatubaraWhite from "../image/batubara_white.svg";
-import { Link, NavLink } from "react-router-dom";
+// import { Link, Link } from "react-router-dom";
+import { Link, animateScroll } from "react-scroll";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -13,43 +14,67 @@ export default function NavBar() {
 
   const isOnTop = useScrollHandler();
 
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
+  const open = () => setState(!open);
+
   return (
     <header className="header-area" id="header">
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-brand">
-            <Link to="/">
-              <img src={Brand} alt="Logo" />
-            </Link>
+            <img src={Brand} alt="Logo" onClick={scrollToTop} />
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
-            <div className="sidebar-brand text-center mt-5 d-block d-xl-none">
-              <Link to="/">
-                <img src={BatubaraWhite} alt="sidebar logo" />
-              </Link>
+            <div
+              className="sidebar-brand text-center mt-5 d-block d-xl-none"
+              onClick={open}
+            >
+              <img
+                src={BatubaraWhite}
+                alt="sidebar logo"
+                onClick={scrollToTop}
+              />
             </div>
             <hr className="d-block d-xl-none text-center" />
-            <NavLink
-              to="/about"
+            <Link
+              to="about"
+              smooth={true}
+              spy={true}
+              offset={-80}
               className="nav-link"
-              activeClassName="selected"
+              onClick={open}
             >
               Tentang Saya
-            </NavLink>
-            <NavLink
-              to="/portfolio"
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              spy={true}
+              offset={-80}
               className="nav-link"
-              activeClassName="selected"
+              onClick={open}
             >
               Portofolio
-            </NavLink>
-            <a
-              href="mailto:alimartondi88@gmail.com"
+            </Link>
+            <Link
+              to="service"
+              smooth={true}
+              spy={true}
+              offset={-80}
               className="nav-link"
-              activeClassName="selected"
+              onClick={open}
+            >
+              Service
+            </Link>
+            <Button
+              variant="light md-info px-4 rounded-pill mx-3 mx-md-0 ml-md-3 mt-5 mt-md-0"
+              href="mailto:alimartondi88@gmail.com"
             >
               Kontak
-            </a>
+            </Button>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}

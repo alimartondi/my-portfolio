@@ -4,42 +4,41 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 import Profil_pic from "../image/a__profil.jpg";
 import { Link } from "react-router-dom";
+import AboutPic from "../image/a___about.png";
 
 export default function () {
   return (
-    <section className="about-area" id="about">
+    <section className="about-area mt-5" id="about">
       <Container>
         <Row>
-          <Col md={6} className="about-profile">
-            <div className="about-card d-block d-xl-flex">
-              <div className="card-image d-flex justify-content-center">
-                <img
-                  src={Profil_pic}
-                  className="img-fluid
-                rounded-circle"
-                  height="300"
-                  alt="Profil"
-                />
-              </div>
-              <div className="about-card-body">
-                <h5 className="card-name">Ali Martondi Batubara</h5>
-                <h6 className="card-profession">Frontend Developer</h6>
-
-                <hr />
-                <div className="card-contact">
-                  <ul>
-                    <li className="c__card-link">
-                      <a href="mailto:alimartondi88@gmail.com">
-                        alimartondi88@gmail.com
-                      </a>
-                    </li>
-                    <li className="c__card-link">
-                      <a href="https://wa.me/6281382748686">+62813-8274-8686</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <Col lg={9} className="about-intro text-center mt-4 mb-4 mx-auto">
+            <h2 className="second-title">Tentang Saya</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={6} className="about-content justify-content-center">
+            <img
+              src={AboutPic}
+              alt="About profile"
+              className="img-fluid d-none d-md-block mx-auto mb-3"
+            />
+          </Col>
+          <Col lg={6} className="about-profile">
+            <p>
+              Kenalin nama saya Alimartondi, biasa dipanggil Ali. Sejak di
+              bangku sekolah menengah atas saya sangat menyukai yang namanya
+              komputer, saat itu dikampung saya lagi maraknya warnet,
+            </p>
+            <img
+              src={AboutPic}
+              alt="About profile"
+              className="img-fluid d-bloc d-md-none mb-3"
+            />
+            <p>
+              Datang ke Jakarta pada tahun 2015 dengan tekad kuliah jurusan
+              komputer, sesederhana itu. dengan berbagai alasan dan pertimbangan
+              akhirnya saya terdaftar di salah satu perguruan tinggi di jakarta
+            </p>
             <div className="about-skill mt-5">
               {skillContents.map((content, i) => (
                 <SkillProgress
