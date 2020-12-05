@@ -40,7 +40,7 @@ export default function NavBar() {
             </div>
             <hr className="d-block d-xl-none text-center" />
             <Link
-              to="about"
+              to="main"
               smooth={true}
               spy={true}
               offset={-80}

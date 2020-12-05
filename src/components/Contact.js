@@ -9,22 +9,18 @@ export default function ContactSection() {
         <Row>
           <Col
             lg="12"
-            className="contact-card d-block d-md-flex h-md-50 mt-5 align-items-md-center"
+            className="contact-card d-block d-md-flex mt-5 align-items-md-center justify-content-md-between"
           >
-            <div className="card-body text-center text-md-left">
+            <div className="contact-card-body text-center text-md-left mb-3 pl-md-4">
               <h5 className="third-title text-light">
                 Tertarik bekerja sama dengan saya?
               </h5>
-              <Button variant="outline-light rounded-pill mt-2 mb-3">
+              <Button variant="light rounded-pill px-3 mt-2 mb-4 mb-md-0 shadow-lg">
                 Kontak Saya
               </Button>
             </div>
-            <div className="card-contact-img text-center text-md-right pr-md-4">
-              <img
-                src={Alianda}
-                alt="Alianda Batubara"
-                className="img-fluid mt-md-n5"
-              />
+            <div className="card-contact-img text-center pr-md-4">
+              <img src={Alianda} alt="Alianda Batubara" className="img-fluid" />
             </div>
           </Col>
         </Row>

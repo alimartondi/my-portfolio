@@ -39,7 +39,7 @@ export default function ServiceSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="service-items mt-4 pl-3 pl-md-2">
+          <Col lg={12} className="service-items mt-4 pl-md-2">
             <div className="service-items-grid">
               {contents.map((content, i) => (
                 <div className="service-card" key={i}>
