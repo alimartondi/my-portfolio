@@ -38,12 +38,30 @@
   opacity: 0.9;
 }
 
+.nav-items .btn-light{
+  background-color: var(--main-blue);
+  color: var(--main-light);
+  border: 1px solid var(--main-blue);
+}
+
+.nav-items .btn-light:hover{
+  background-color: var(--main-light);
+  color: var(--main-blue);
+}
+
 .nav-items.active {
   background-color: var(--main-blue);
   top: 0;
   right: 0;
   transition: all 0.3s ease;
   opacity: 1;
+}
+.nav-items.active .nav-link:hover{
+  color: #f0f0f0;
+}
+
+.nav-items.active .btn-light{
+  background-color: var(--main-light);
 }
 
 .nav-link {
@@ -126,7 +144,7 @@
     position: relative;
     left: 0;
     height: 100%;
-    width: 45%;
+    width: 60%;
     justify-content: space-between;
   }
 

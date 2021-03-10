@@ -69,6 +69,16 @@ export default function NavBar() {
             >
               Service
             </Link>
+            <Link
+              to="tools"
+              smooth={true}
+              spy={true}
+              offset={10}
+              className="nav-link"
+              onClick={open}
+            >
+              Kemampuan
+            </Link>
             <Button
               variant="light md-info px-4 rounded-pill mx-3 mx-md-0 ml-md-3 mt-5 mt-md-0"
               href="mailto:alimartondi88@gmail.com"

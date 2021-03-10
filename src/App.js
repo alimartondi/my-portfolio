@@ -8,6 +8,7 @@ import ServiceSection from "./components/Service";
 import FooterSection from "./components/Footer";
 import ToolsSection from "./components/ToolsSection";
 import ContactSection from "./components/Contact";
+import PortfolioSlider from "./components/Slick";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ServiceSection />
       <ContactSection />
       <ToolsSection />
+      <PortfolioSlider />
       <FooterSection />
     </div>
   );
