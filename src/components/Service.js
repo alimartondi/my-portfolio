@@ -1,36 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faEdit,
-  faBezierCurve,
-} from "@fortawesome/free-solid-svg-icons";
-import { Container, Row, Col } from "react-bootstrap";
-
-const contents = [
-  {
-    icon: faCode,
-    title: "Frontend Development",
-    description:
-      "Solusi untuk anda yang butuh website dengan tampilan yang menarik, User Friendly dan Responsive menarik, User Friendly dan Responsive",
-  },
-  {
-    icon: faEdit,
-    title: "Web Design",
-    description:
-      "Tidak punya desain website sendiri? saya bisa buatkan website mulai dari desain UI, banner maupun logo sesuai kebutuhan",
-  },
-  {
-    icon: faBezierCurve,
-    title: "Graphic Design",
-    description:
-      "Atau butuh paket komplit untuk kebutuhan usaha anda, mulai dari website sampai aplikasi mobile? tim kami siap membantu",
-  },
-];
+import { Container, Row, Col, Card } from "react-bootstrap";
+import Uiux from "../image/uiux.svg";
+import Frontend from "../image/frontend.svg";
+import Design from "../image/design.svg";
 
 export default function ServiceSection() {
   return (
-    <section className="service-area" id="service">
+    <section className="service-area mt-5" id="service">
       <Container className="px-0">
         <Row className="justify-content-end">
           <Col lg={12} className="text-center">
@@ -42,15 +18,17 @@ export default function ServiceSection() {
           <Col lg={12} className="service-items mt-4 pl-md-2">
             <div className="service-items-grid">
               {contents.map((content, i) => (
-                <div className="service-card" key={i}>
-                  <div className="card-icon mx-auto">
-                    <FontAwesomeIcon icon={content.icon}></FontAwesomeIcon>
-                  </div>
-                  <div className="card-body">
+                <Card className="service-card rounded-lg border-0 pt-3" key={i}>
+                  <Card.Header className="bg-white border-0">
+                    <img src={content.image} alt={content.title} />
+                  </Card.Header>
+                  <Card.Body>
                     <h5 className="card-title">{content.title}</h5>
-                    <p className="description mt-2">{content.description}</p>
-                  </div>
-                </div>
+                    <p className="description mt-4 px-3">
+                      {content.description}
+                    </p>
+                  </Card.Body>
+                </Card>
               ))}
             </div>
           </Col>
@@ -59,3 +37,24 @@ export default function ServiceSection() {
     </section>
   );
 }
+
+const contents = [
+  {
+    image: Uiux,
+    title: "UI/UX Design",
+    description:
+      "Solusi untuk anda yang butuh website dengan tampilan yang menarik, User Friendly dan Responsive menarik, User Friendly dan Responsive",
+  },
+  {
+    image: Frontend,
+    title: "Front-end",
+    description:
+      "Tidak punya desain website sendiri? saya bisa buatkan website mulai dari desain UI, banner maupun logo sesuai kebutuhan",
+  },
+  {
+    image: Design,
+    title: "Web Design",
+    description:
+      "Atau butuh paket komplit untuk kebutuhan usaha anda, mulai dari website sampai aplikasi mobile? tim kami siap membantu",
+  },
+];

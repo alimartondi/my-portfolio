@@ -6,15 +6,12 @@ import "../style/style.css";
 export default function mainSection() {
   return (
     <section className="main-area" id="main">
-      <div className="banner bg-light shadow-sm">
+      <div className="banner bg-light">
         <Container>
           <div className="hero-banner d-block d-md-flex justify-content-between">
             <div className="hero-content">
-              <p className="description ml-1">Hallo, saya seorang</p>
               <h1 className="main-title">
-                Frontend
-                <br />
-                Developer
+                Hallo, Saya Seorang Frontend Developer
               </h1>
               <p className="description mt-4 ml-1">
                 Lulusan S1 Teknik Informatika Nusa Mandiri Jakarta. Selain
@@ -27,10 +24,7 @@ export default function mainSection() {
                   variant="dark"
                   className="main-button shadow-sm ml-md-1"
                 >
-                  Hire Me!
-                </Button>
-                <Button variant="outline-dark" className="second-button">
-                  Download My CV!
+                  Hubungi Saya
                 </Button>
               </div>
             </div>

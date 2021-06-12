@@ -6,7 +6,6 @@ import {
   faHtml5,
   faJs,
   faBootstrap,
-  fab,
   faXbox,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -18,7 +17,7 @@ export default function ToolsSection() {
       <Container>
         <Row>
           <Col lg={12} className="tools-content text-center mt-5">
-            <h2 className="second-title mt-5 mb-4">Kemampuan</h2>
+            <h2 className="second-title mt-5 mb-4">Alat & Kemampuan</h2>
           </Col>
         </Row>
         <Row>

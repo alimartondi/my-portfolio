@@ -38,13 +38,13 @@
   opacity: 0.9;
 }
 
-.nav-items .btn-light{
+.nav-items .btn-light {
   background-color: var(--main-blue);
   color: var(--main-light);
   border: 1px solid var(--main-blue);
 }
 
-.nav-items .btn-light:hover{
+.nav-items .btn-light:hover {
   background-color: var(--main-light);
   color: var(--main-blue);
 }
@@ -56,18 +56,18 @@
   transition: all 0.3s ease;
   opacity: 1;
 }
-.nav-items.active .nav-link:hover{
+.nav-items.active .nav-link:hover {
   color: #f0f0f0;
 }
 
-.nav-items.active .btn-light{
+.nav-items.active .btn-light {
   background-color: var(--main-light);
 }
 
 .nav-link {
   color: var(--main-light);
   font-weight: 500;
-  font-size: 20px ;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -80,11 +80,10 @@
   border-radius: 4px;
 }
 
-.nav-items.active .btn-light{
+.nav-items.active .btn-light {
   font-weight: 600;
   color: var(--main-blue);
 }
-
 
 /* ==Humberger Menu Icon== */
 .burger_hamburger-box__3lYk7 {
@@ -109,11 +108,13 @@
   bottom: -7px !important;
 }
 
-.burger_hamburger--spin__3aNMq.burger_is-active__3Yxiv .burger_hamburger-inner__14XT2:after {
+.burger_hamburger--spin__3aNMq.burger_is-active__3Yxiv
+  .burger_hamburger-inner__14XT2:after {
   bottom: 0 !important;
 }
 
-.burger_hamburger--spin__3aNMq.burger_is-active__3Yxiv .burger_hamburger-inner__14XT2::before {
+.burger_hamburger--spin__3aNMq.burger_is-active__3Yxiv
+  .burger_hamburger-inner__14XT2::before {
   top: 0 !important;
 }
 
@@ -125,14 +126,13 @@
 
 /* ===NAVBAR RESPONSIVE=== */
 
-
 @media (min-width: 1024px) {
   .navbar {
     height: 80px;
     transition: ease-in-out 0.4s;
   }
 
-  .navbar-brand img{
+  .navbar-brand img {
     max-height: 100%;
   }
 
@@ -144,7 +144,7 @@
     position: relative;
     left: 0;
     height: 100%;
-    width: 60%;
+    width: 40%;
     justify-content: space-between;
   }
 
@@ -154,14 +154,13 @@
 
   .nav-link {
     padding: 0;
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     color: #333333;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     padding: 0 5px;
   }
-
 
   .nav-link.selected,
   .nav-link:active {
@@ -185,6 +184,4 @@
   .nav-items hr {
     display: none !important;
   }
-  
 }
-

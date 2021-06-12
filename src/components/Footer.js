@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import BatubaraWhite from "../image/batubara_white.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

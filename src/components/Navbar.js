@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/batubara_org.svg";
@@ -40,51 +40,45 @@ export default function NavBar() {
             </div>
             <hr className="d-block d-xl-none text-center" />
             <Link
-              to="main"
-              smooth={true}
-              spy={true}
-              offset={-80}
-              className="nav-link"
-              onClick={open}
-            >
-              Tentang Saya
-            </Link>
-            <Link
-              to="portfolio"
-              smooth={true}
-              spy={true}
-              offset={-80}
-              className="nav-link"
-              onClick={open}
-            >
-              Portofolio
-            </Link>
-            <Link
               to="service"
               smooth={true}
               spy={true}
-              offset={-80}
+              offset={-100}
               className="nav-link"
               onClick={open}
             >
               Service
             </Link>
             <Link
+              to="project"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              className="nav-link"
+              onClick={open}
+            >
+              Project
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              spy={true}
+              offset={-100}
+              className="nav-link"
+              onClick={open}
+            >
+              Portfolio
+            </Link>
+            <Link
               to="tools"
               smooth={true}
               spy={true}
-              offset={10}
+              offset={-100}
               className="nav-link"
               onClick={open}
             >
               Kemampuan
             </Link>
-            <Button
-              variant="light md-info px-4 rounded-pill mx-3 mx-md-0 ml-md-3 mt-5 mt-md-0"
-              href="mailto:alimartondi88@gmail.com"
-            >
-              Kontak
-            </Button>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}
