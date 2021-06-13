@@ -5,7 +5,7 @@ import Main from "./components/Main";
 import PortFolioSection from "./components/Portfolio";
 import ServiceSection from "./components/Service";
 import FooterSection from "./components/Footer";
-import ToolsSection from "./components/ToolsSection";
+import ToolsSection from "./components/Tools";
 import ContactSection from "./components/Contact";
 import ProjectSection from "./components/Project";
 

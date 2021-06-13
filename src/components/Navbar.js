@@ -53,7 +53,7 @@ export default function NavBar() {
               to="project"
               smooth={true}
               spy={true}
-              offset={-100}
+              offset={-160}
               className="nav-link"
               onClick={open}
             >
@@ -77,7 +77,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              Kemampuan
+              Skill & Tools
             </Link>
           </div>
           <Burger

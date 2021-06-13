@@ -6,12 +6,15 @@ import Design from "../image/design.svg";
 
 export default function ServiceSection() {
   return (
-    <section className="service-area mt-5" id="service">
+    <section className="service-area" id="service">
       <Container className="px-0">
-        <Row className="justify-content-end">
-          <Col lg={12} className="text-center">
-            <h2 className="second-title">Layanan</h2>
-            <h5 className="subtitle">Apa yang bisa saya kerjakan?</h5>
+        <Row className="justify-content-center">
+          <Col lg={7} className="text-center">
+            <h2 className="second-title">Yang saya kerjakan</h2>
+            <h5 className="description">
+              Selain programming, saya juga menyukai UI-UX Design dan Graphic
+              Design seperti membuat logo, poster dll.
+            </h5>
           </Col>
         </Row>
         <Row>
@@ -45,20 +48,20 @@ export default function ServiceSection() {
 const contents = [
   {
     image: Uiux,
-    title: "UI/UX Design",
+    title: "UI-UX Design",
     description:
-      "Solusi untuk anda yang butuh website dengan tampilan yang menarik, User Friendly dan Responsive menarik, User Friendly dan Responsive",
+      "Seperti desain Landing Page, Mobile App dll. Menggunakan Adobe XD dan Figma",
   },
   {
     image: Frontend,
     title: "Front-end",
     description:
-      "Tidak punya desain website sendiri? saya bisa buatkan website mulai dari desain UI, banner maupun logo sesuai kebutuhan",
+      "Untuk Frontend saya menggunakan React, Bootstrap dan Tailwind, atau murni CSS",
   },
   {
     image: Design,
     title: "Web Design",
     description:
-      "Atau butuh paket komplit untuk kebutuhan usaha anda, mulai dari website sampai aplikasi mobile? tim kami siap membantu",
+      "Untuk melengkapi logo dan banner website menggunakan Illustrator atau CorelDraw",
   },
 ];

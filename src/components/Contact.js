@@ -9,7 +9,7 @@ export default function ContactSection() {
         <Row>
           <Col
             lg="12"
-            className="contact-card d-block d-md-flex mt-5 align-items-md-center justify-content-md-between px-1"
+            className="contact-card d-block d-md-flex mt-5 align-items-md-center justify-content-md-between"
           >
             <div className="contact-card-body text-center text-md-left mb-3 pl-md-5">
               <h1 className="second-title text-light">

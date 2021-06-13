@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 /* ===CSS RESET=== */
 :root {
@@ -24,6 +24,7 @@ a:hover {
 
 a {
   color: var(--main-dark);
+  font-weight: 600;
   transition: 0.4s ease-in-out;
 }
 
@@ -133,7 +134,7 @@ img {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #f8f9fa;
 }
 
@@ -148,11 +149,6 @@ body {
 .second-title {
   color: var(--main-dark);
   font-size: 28px;
-  font-weight: 700;
-}
-.third-title {
-  color: var(--main-dark);
-  font-size: 24px;
   font-weight: 600;
 }
 
@@ -164,25 +160,25 @@ body {
 }
 
 .description {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6rem;
 }
 
 .card-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 
 @media (min-width: 756px) {
   .main-title {
     font-size: 55px;
-    line-height: 3.5rem;
+    line-height: 3.8rem;
   }
 
   .second-title {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .third-title {
@@ -191,7 +187,7 @@ body {
   }
 
   .description {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -216,13 +212,15 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: 0.4s ease-in-out 0s;
-  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .main-button {
+  font-size: 14px;
+  padding: 0.7rem 1.6rem;
   background-color: var(--main-blue);
   border-color: var(--main-blue);
-  padding: 0.6rem 0;
 }
 
 .second-button {

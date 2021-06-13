@@ -11,11 +11,11 @@ export default function portfolioSection() {
     <section className="portfolio-area " id="portfolio">
       <Container className="px-0">
         <Row>
-          <Col lg={9} className="portfolio-intro text-center mx-auto">
-            <h2 className="second-title">Portofolio</h2>
+          <Col lg={7} className="portfolio-intro text-center mx-auto">
+            <h2 className="second-title">Sudah pernah buat apa</h2>
             <p className="description px-2 px-md-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Excepturi, saepe!
+              Beberapa project website yang sudah dideploy menggunakan layanan
+              gratis dari netlify
             </p>
           </Col>
         </Row>
@@ -23,7 +23,10 @@ export default function portfolioSection() {
           <Col lg={12} className="portfolio-items pl-md-2">
             <div className="portfolio-items__grid">
               {webDesignContents.map((content, i) => (
-                <Card className="portfolio-card border-0 rounded-lg" key={i}>
+                <Card
+                  className="portfolio-card border-0 rounded-lg text-left"
+                  key={i}
+                >
                   <Card.Header className="p-0 rounded-top-lg border-0">
                     <img
                       src={content.image}
@@ -58,7 +61,7 @@ const webDesignContents = [
     image: Courses,
     alt: "Landing page ounline courses",
     title: "Ounline Courses",
-    body: "Learn Project, Landing Page website kursus online, dibuat dengan figma untuk tampilan UI-nya, serta React dan Bootstrap untuk Frontend-nya.",
+    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",
     link: "https://aliandacourses.netlify.app/",
   },
   {

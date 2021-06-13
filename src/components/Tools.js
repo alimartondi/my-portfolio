@@ -17,7 +17,7 @@ export default function ToolsSection() {
       <Container>
         <Row>
           <Col lg={12} className="tools-content text-center mt-5">
-            <h2 className="second-title mt-5 mb-4">Alat & Kemampuan</h2>
+            <h2 className="second-title mt-5 mb-4">Udah bisa apa aja</h2>
           </Col>
         </Row>
         <Row>
