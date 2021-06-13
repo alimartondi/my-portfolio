@@ -1,8 +1,10 @@
 import React from "react";
 import { Row, Col, Container, Card } from "react-bootstrap";
-import House from "../image/the_house.png";
-import Gowes from "../image/gowes.png";
-import Coffe from "../image/coffe.png";
+import Courses from "../image/alianda-courses.png";
+import Portfolio from "../image/my-portfolio.png";
+import Gadjian from "../image/gadjian.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function portfolioSection() {
   return (
@@ -18,21 +20,28 @@ export default function portfolioSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="web-design-items pl-3 pl-md-2">
-            <div className="web-design-grid">
+          <Col lg={12} className="portfolio-items pl-md-2">
+            <div className="portfolio-items__grid">
               {webDesignContents.map((content, i) => (
-                <Card className="portfolio-card" key={i}>
-                  <Card.Header className="p-0">
+                <Card className="portfolio-card border-0 rounded-lg" key={i}>
+                  <Card.Header className="p-0 rounded-top-lg border-0">
                     <img
                       src={content.image}
                       alt={content.alt}
                       className="img-fluid"
                     />
                   </Card.Header>
-                  <Card.Body>
+                  <Card.Body className="px-3">
                     <p className="card-title">{content.title}</p>
                     <p className="description">{content.body}</p>
                   </Card.Body>
+                  <hr className="p-0 m-0" />
+                  <Card.Link className="text-right py-3 px-4">
+                    <a href={content.link} target="blank">
+                      KUNJUNGI{" "}
+                      <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+                    </a>
+                  </Card.Link>
                 </Card>
               ))}
             </div>
@@ -46,21 +55,24 @@ export default function portfolioSection() {
 
 const webDesignContents = [
   {
-    image: House,
-    alt: "Web Design",
-    title: "Landing Page",
-    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",
+    image: Courses,
+    alt: "Landing page ounline courses",
+    title: "Ounline Courses",
+    body: "Learn Project, Landing Page website kursus online, dibuat dengan figma untuk tampilan UI-nya, serta React dan Bootstrap untuk Frontend-nya.",
+    link: "https://aliandacourses.netlify.app/",
   },
   {
-    image: Coffe,
-    alt: "Web Design",
-    title: "Landing Page",
+    image: Portfolio,
+    alt: "Landing page my portfolio",
+    title: "My Portfolio",
     body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",
+    link: "https://aliandabatubara.netlify.app/",
   },
   {
-    image: Gowes,
-    alt: "Web Design",
-    title: "Landing Page",
+    image: Gadjian,
+    alt: "Admin dashboard gadjian",
+    title: "Gadjian",
     body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",
+    link: "https://aliandagadjian.netlify.app/",
   },
 ];

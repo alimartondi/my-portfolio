@@ -15,12 +15,16 @@ export default function ServiceSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="service-items mt-4 pl-md-2">
-            <div className="service-items-grid">
+          <Col lg={12} className="service-items pl-md-2">
+            <div className="service-items__grid">
               {contents.map((content, i) => (
                 <Card className="service-card rounded-lg border-0 pt-3" key={i}>
                   <Card.Header className="bg-white border-0">
-                    <img src={content.image} alt={content.title} />
+                    <img
+                      src={content.image}
+                      alt={content.title}
+                      className="img-fluid"
+                    />
                   </Card.Header>
                   <Card.Body>
                     <h5 className="card-title">{content.title}</h5>

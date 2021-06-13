@@ -7,19 +7,7 @@
 
 .hero-content {
   max-width: 27rem;
-  padding-top: 110px;
-}
-
-@media (max-width: 767.98px) {
-  .hero-content {
-    max-width: 100%;
-  }
-}
-
-.hero-image {
-  order: 1;
-  text-align: center;
-  padding: 0 35px;
+  padding-top: 150px;
 }
 
 .hero-image img::after {
@@ -32,6 +20,27 @@
 }
 
 /* ===End of Main Area=== */
+
+/* ===Servie Area=== */
+.service-card,
+.portfolio-card {
+  background-color: var(--main-light);
+  color: var(--main-dark);
+  text-align: center;
+  width: 280px;
+  overflow: hidden;
+  margin-right: 1.8rem;
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.portfolio-card .card-link a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===End Of Sevice Area=== */
 
 /* ===About Area=== */
 .c_about-me {
@@ -240,33 +249,17 @@
   height: 100%;
 }
 
-@media screen and (width: 768px) {
-  /* .slick-slider {
-    width: calc(100% + 16px)!important;
-    left: -16px!important;
-  } */
-}
-
-@media (max-width: 768px) {
-  /* .slick-slider {
-    position: relative;
-    right: 0;
-    width: calc(100% + 32px) !important;
-    left: -16px !important;
-  } */
-}
-
 .service-items,
-.web-design-items {
+.portfolio-items {
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
-.service-items-grid,
-.web-design-grid {
+.service-items__grid,
+.portfolio-items__grid {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -277,24 +270,7 @@
   box-sizing: border-box;
   float: left;
   position: relative;
-  padding-bottom: 1rem;
-}
-
-.service-card,
-.portfolio-card {
-  display: inline-block;
-  overflow-x: auto;
-  margin-right: 1.8rem;
-  width: 280px;
-  background-color: var(--main-light);
-  border: none;
-  /* -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
-}
-
-.web-design-card .card-header {
-  padding: 0;
-  border: none;
+  padding: 2rem 0;
 }
 
 /* ===End Of Portfolio Area */
@@ -397,32 +373,6 @@
 }
 
 /* ===End Of Footer Area=== */
-
-/* ===Servie Area=== */
-
-.service-card {
-  border-radius: 15px;
-  background-color: var(--main-light);
-  color: var(--main-dark);
-  text-align: center;
-  transition: 0.3s ease-in-out;
-}
-
-.service-card:hover {
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: all 0.3s ease-in-out;
-}
-
-.card-icon {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 55px;
-  color: var(--main-blue);
-  transition: 0.3s ease-in-out;
-}
-
-/* ===End Of Sevice Area=== */
 
 /* ===Tools Section=== */
 .tools-card {
@@ -563,18 +513,25 @@
     color: var(--main-blue) !important;
   }
 
-  .service-items-grid,
-  .web-design-grid {
+  .service-items__grid,
+  .portfolio-items__grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 2rem;
-    padding: 2rem;
+    grid-gap: 1.5rem;
+    padding: 1.9rem;
   }
 
   .service-card,
   .portfolio-card {
     margin-right: 0;
     width: auto;
+    box-shadow: none;
+  }
+
+  .service-card:hover,
+  .portfolio-card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
   /* ==SERVICE AREA== */

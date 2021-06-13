@@ -28,7 +28,7 @@ export default function mainSection() {
                 </Button>
               </div>
             </div>
-            <div className="hero-image">
+            <div className="hero-image px-5">
               <img src={Alianda} className="img-fluid" alt="banner" />
             </div>
           </div>
