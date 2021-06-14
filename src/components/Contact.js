@@ -4,7 +4,7 @@ import Alianda from "../image/a__about.png";
 
 export default function ContactSection() {
   return (
-    <section className="contact-area mt-5" id="contact">
+    <section className="contact-area" id="contact">
       <Container>
         <Row>
           <Col
@@ -17,7 +17,14 @@ export default function ContactSection() {
                 <br />
                 dengan saya?
               </h1>
-              <Button variant="light rounded-lg px-3 mt-5 mb-4 mb-md-0">
+              <p className="description text-white w-sm-50 mt-4">
+                Sedang menjalani profesi sebagai Freelance, sambil mencari
+                pekerjaan full time
+              </p>
+              <Button
+                variant="light rounded-lg px-3 mt-5 mb-4 mb-md-0"
+                href="mailto:alimartondi88@gmail.com"
+              >
                 Kontak Saya
               </Button>
             </div>

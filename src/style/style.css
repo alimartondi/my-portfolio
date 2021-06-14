@@ -37,6 +37,7 @@
   color: var(--main-dark);
   text-align: center;
   width: 280px;
+  border-radius: 10px;
   overflow: hidden;
   margin-right: 1.8rem;
   transition: 0.3s ease-in-out;
@@ -50,87 +51,6 @@
 }
 
 /* ===End Of Sevice Area=== */
-
-/* ===About Area=== */
-.c_about-me {
-  padding-top: 80px;
-}
-
-/* .about-card{
-  text-align: center;
-  margin-top: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: var(--main-light);
-  border-radius: 10px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-} */
-
-.about-card-body {
-  text-align: center;
-  margin-top: 20px;
-  display: block;
-}
-
-.about-card-body .card-name {
-  font-weight: 600;
-}
-
-.about-card-body hr {
-  background-color: var(--main-blue);
-  width: 50%;
-  height: 2px;
-  border-radius: 15px;
-  margin: 10px auto 15px;
-}
-
-.about-profile .card-image img {
-  height: 250px;
-}
-
-.skill-bar .progress {
-  display: flex;
-  height: 0.7rem;
-  overflow: hidden;
-  line-height: 0;
-  font-size: 0.75rem;
-  background-color: #e9ecef;
-  border-radius: 1rem;
-}
-
-.progress-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #323337;
-  transition: width 0.6s ease;
-  border-radius: 15px;
-  transition: 0.4s ease-in-out 0s;
-}
-
-.about-desc {
-  line-height: 1.8rem;
-}
-
-/* @media(min-width: 1140px){
-  .about-card{
-    padding: 15px;
-  }
-  .about-card-body{
-    margin-left: auto;
-    text-align: left;
-  }
-  .about-card-body hr{
-    margin-left: 0;
-    margin: 30px 0;
-  }
-} */
-
-/* ===End Of About Area=== */
 
 /* 404 Not Found */
 .not-found-card {
@@ -388,23 +308,26 @@
 .tools-card {
   justify-content: center;
   text-align: center;
-  font-size: 35px;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  color: var(--main-blue);
   font-weight: 700;
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  padding: 20px;
+  padding: 8px;
 }
 
-.tools-card-header {
+/* .tools-card-header {
   background-color: var(--main-blue);
   margin: auto;
   color: white;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
-}
+} */
 
 /* ===End OF Tools Section */
 
@@ -445,90 +368,18 @@
     padding-top: 52px;
   }
 
-  /* ===ABOUT=== */
-
-  /* .about-area {
-    margin-top: 100px;
-    flex-direction: column-reverse;
-  } */
-  .about-card {
-    margin-top: 10px;
-  }
-
-  .about-profile .card-image img {
-    height: 235px;
-  }
-
-  .about-content-desc {
-    margin-top: 30px;
-  }
-
-  .about-profile {
-    padding-right: 24px;
-  }
-  .information-link {
-    margin-top: 18px;
-  }
-
   /* ==PORTFOLIO== */
   .portfolio-area,
   .project-area,
-  .service-area {
+  .service-area,
+  .contact-area,
+  .tools-area {
     margin-top: 100px;
   }
 
   .project-image {
     border-radius: 10px;
     overflow: hidden;
-  }
-  /* .slick-slide{
-    padding-right: 32px;
-    width: 360px;
-  } */
-
-  /* .portfolio-card-wrap img {
-    height: auto;
-    width: 100%;
-  } */
-
-  /* .c-card-body{
-    display: block;
-    padding: 16px;
-  } */
-
-  .slick-prev,
-  .slick-next {
-    height: 50px !important;
-    width: 50px !important;
-    border-radius: 50%;
-    z-index: 1;
-    top: -65px !important;
-    -webkit-box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .slick-prev:before,
-  .slick-next:before {
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 20px;
-    line-height: 0.5 !important;
-    opacity: 0.75;
-    color: var(--main-blue) !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .slick-prev {
-    left: 0;
-    right: 70px !important;
-    margin-left: auto;
-  }
-  .slick-next {
-    right: 0 !important;
-  }
-
-  .slick-dots li.slick-active button:before {
-    opacity: 1;
-    color: var(--main-blue) !important;
   }
 
   .service-items__grid,
@@ -556,7 +407,16 @@
 
   /* ===Tools Area=== */
   .tools-card {
+    font-size: 3rem;
     width: 160px;
+    height: 160px;
+    box-shadow: none;
+    transition: ease-in-out 0.3s;
+  }
+
+  .tools-card:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   }
 
   /* ===Contact Area=== */

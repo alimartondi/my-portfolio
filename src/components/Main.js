@@ -14,14 +14,13 @@ export default function mainSection() {
                 Hallo, Saya Seorang Frontend Developer
               </h1>
               <p className="description mt-4">
-                Lulusan S1 Teknik Informatika Nusa Mandiri Jakarta. Selain
-                Programming saya juga menyukai dunia Fotografi dan Desain
-                Grafis.
+                Saya lulusan Teknik Informatika, bisa React, Bootstrap dan
+                Tailwindcss. Selain Programming saya juga menyukai Desain UI-UX,
+                Fotografi dan Desain Grafis.
               </p>
-              <div className="hero-btn d-block d-md-flex text-center mt-5">
+              <div className="hero-btn d-block d-md-flex mt-5">
                 <Button
                   href="mailto:alimartondi88@gmail.com"
-                  variant="dark"
                   className="main-button"
                 >
                   Hubungi Saya

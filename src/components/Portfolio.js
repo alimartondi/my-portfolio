@@ -23,11 +23,8 @@ export default function portfolioSection() {
           <Col lg={12} className="portfolio-items pl-md-2">
             <div className="portfolio-items__grid">
               {webDesignContents.map((content, i) => (
-                <Card
-                  className="portfolio-card border-0 rounded-lg text-left"
-                  key={i}
-                >
-                  <Card.Header className="p-0 rounded-top-lg border-0">
+                <Card className="portfolio-card border-0 text-left" key={i}>
+                  <Card.Header className="p-0 border-0">
                     <img
                       src={content.image}
                       alt={content.alt}

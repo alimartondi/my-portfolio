@@ -9,8 +9,8 @@ export default function ServiceSection() {
     <section className="service-area" id="service">
       <Container className="px-0">
         <Row className="justify-content-center">
-          <Col lg={7} className="text-center">
-            <h2 className="second-title">Yang saya kerjakan</h2>
+          <Col lg={6} className="text-center">
+            <h2 className="second-title">Yang bisa saya kerjakan</h2>
             <h5 className="description">
               Selain programming, saya juga menyukai UI-UX Design dan Graphic
               Design seperti membuat logo, poster dll.
@@ -21,7 +21,7 @@ export default function ServiceSection() {
           <Col lg={12} className="service-items pl-md-2">
             <div className="service-items__grid">
               {contents.map((content, i) => (
-                <Card className="service-card rounded-lg border-0 pt-3" key={i}>
+                <Card className="service-card border-0 pt-3" key={i}>
                   <Card.Header className="bg-white border-0">
                     <img
                       src={content.image}

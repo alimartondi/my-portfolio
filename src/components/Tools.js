@@ -16,8 +16,12 @@ export default function ToolsSection() {
     <section className="tools-area" id="tools">
       <Container>
         <Row>
-          <Col lg={12} className="tools-content text-center mt-5">
-            <h2 className="second-title mt-5 mb-4">Udah bisa apa aja</h2>
+          <Col lg={6} className="tools-content text-center mx-auto">
+            <h2 className="second-title">Udah bisa apa aja</h2>
+            <p className="description">
+              Skills maupun Tools pendukung yang saya bisa sebagai Frontend
+              Developer di antaranya
+            </p>
           </Col>
         </Row>
         <Row>
@@ -63,5 +67,21 @@ const toolsContents = [
   {
     icon: faBootstrap,
     title: "Bootstrap",
+  },
+  {
+    icon: faHtml5,
+    title: "Tailwind",
+  },
+  {
+    icon: faCss3,
+    title: "Figma",
+  },
+  {
+    icon: faJs,
+    title: "Illustrator",
+  },
+  {
+    icon: faReact,
+    title: "GIT",
   },
 ];
