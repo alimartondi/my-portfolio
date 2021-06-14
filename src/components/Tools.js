@@ -11,9 +11,9 @@ import {
 
 import { Col, Container, Row } from "react-bootstrap";
 
-export default function ToolsSection() {
+export default function Tools() {
   return (
-    <section className="tools-area" id="tools">
+    <section className="tools" id="tools">
       <Container>
         <Row>
           <Col lg={6} className="tools-content text-center mx-auto">

@@ -37,7 +37,7 @@ li {
 }
 img {
   -webkit-user-drag: none;
-  -moz-user-select: none;
+  user-select: none;
 }
 
 .col,
@@ -148,7 +148,7 @@ body {
 
 .second-title {
   color: var(--main-dark);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -191,54 +191,54 @@ body {
   }
 }
 
-/* @media (min-width: 992px) {
-    .main-title {
-        font-size: 75px;
-        line-height: 4.5rem;
-    }
-} */
-
 /* ====ALL BUTTON STYLE=== */
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-  background-color: var(--main-blue);
-  border-color: var(--main-blue);
-}
-
 .main-button,
 .second-button {
   display: inline-block;
   font-weight: 500;
+  font-size: 15px;
+  padding: 0.7rem 1.6rem;
   cursor: pointer;
   transition: 0.4s ease-in-out 0s;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.main-button:active,
+.main-button:focus,
+.main-button:hover,
+.second-button:active,
+.second-button:focus,
+.second-button:hover {
+  outline: none;
+  box-shadow: none;
+}
+
 .main-button {
-  font-size: 14px;
-  padding: 0.7rem 1.6rem;
   background-color: var(--main-blue);
   border-color: var(--main-blue);
+  color: var(--main-light);
 }
 
 .second-button {
-  margin-top: 10px;
   background-color: var(--main-light);
-  border-color: var(--main-dark);
-  color: var(--main-dark);
+  border-color: var(--main-light);
+  color: var(--main-blue);
 }
 
-.main-button:hover {
-  background-color: var(--second-blue);
-  border-color: var(--second-blue);
+.main-button:hover,
+.main-button:focus,
+.main-button:active {
+  background-color: var(--second-blue) !important;
+  border-color: var(--second-blue) !important;
 }
 
-.second-button:hover {
-  background-color: var(--main-dark);
-  color: var(--main-light);
-  border-color: var(--main-dark);
+.second-button:hover,
+.second-button:focus,
+.second-button:active {
+  background-color: #e2e6ea !important;
+  border-color: #e2e6ea !important;
+  color: var(--main-blue) !important;
 }
 
 .html {

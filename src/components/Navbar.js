@@ -21,7 +21,7 @@ export default function NavBar() {
   const open = () => setState(!open);
 
   return (
-    <header className="header-area" id="header">
+    <header className="header" id="header">
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-brand">

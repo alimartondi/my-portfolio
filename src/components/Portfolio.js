@@ -1,14 +1,14 @@
 import React from "react";
 import { Row, Col, Container, Card } from "react-bootstrap";
 import Courses from "../image/alianda-courses.png";
-import Portfolio from "../image/my-portfolio.png";
+import Myportfolio from "../image/my-portfolio.png";
 import Gadjian from "../image/gadjian.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-export default function portfolioSection() {
+export default function Portfolio() {
   return (
-    <section className="portfolio-area " id="portfolio">
+    <section className="portfolio " id="portfolio">
       <Container className="px-0">
         <Row>
           <Col lg={7} className="portfolio-intro text-center mx-auto">
@@ -35,10 +35,8 @@ export default function portfolioSection() {
                     <p className="card-title">{content.title}</p>
                     <p className="description">{content.body}</p>
                   </Card.Body>
-                  <hr className="p-0 m-0" />
                   <Card.Link className="text-right py-3 px-4">
                     <a href={content.link} target="blank">
-                      KUNJUNGI{" "}
                       <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                     </a>
                   </Card.Link>
@@ -62,7 +60,7 @@ const webDesignContents = [
     link: "https://aliandacourses.netlify.app/",
   },
   {
-    image: Portfolio,
+    image: Myportfolio,
     alt: "Landing page my portfolio",
     title: "My Portfolio",
     body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",

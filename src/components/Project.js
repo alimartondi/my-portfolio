@@ -2,13 +2,13 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
-import Project from "../image/idf.png";
+import Idf from "../image/idf.png";
 
-export default function ProjectSection() {
+export default function Project() {
   return (
-    <section className="project-area pb-5" id="project">
+    <section className="project pb-5" id="project">
       <Container>
-        <Row className="align-items-md-center">
+        <Row className="align-items-lg-center">
           <Col
             md={6}
             className="text-left pr-md-5 order-2 order-md-1 mt-4 mt-md-0"
@@ -31,8 +31,8 @@ export default function ProjectSection() {
               <FontAwesomeIcon icon={faChevronRight} className="ml-2 small" />
             </Button>
           </Col>
-          <Col md={6} className="project-image mt-5 mt-md-0 order-1 order-md-2">
-            <img src={Project} alt="project-idf" className="img-fluid" />
+          <Col md={6} className="project-image order-1 order-md-2">
+            <img src={Idf} alt="project-idf" className="img-fluid" />
           </Col>
         </Row>
       </Container>
