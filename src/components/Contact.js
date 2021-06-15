@@ -8,7 +8,7 @@ export default function Contact() {
       <Container>
         <Row>
           <Col lg={12}>
-            <div className="contact-card">
+            <div className="contact-card mt-lg-5">
               <div className="contact-card__body d-block d-md-flex align-items-md-center justify-content-md-between px-4 px-lg-0 ">
                 <div className="contact-card__content pl-md-3 pl-lg-5">
                   <h1 className="second-title text-light">

@@ -35,10 +35,12 @@ export default function Portfolio() {
                     <p className="card-title">{content.title}</p>
                     <p className="description">{content.body}</p>
                   </Card.Body>
-                  <Card.Link className="text-right py-3 px-4">
-                    <a href={content.link} target="blank">
-                      <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-                    </a>
+                  <Card.Link
+                    className="text-right py-3 px-4"
+                    href={content.link}
+                    target="blank"
+                  >
+                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                   </Card.Link>
                 </Card>
               ))}

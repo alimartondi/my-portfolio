@@ -7,6 +7,8 @@ import {
   faJs,
   faBootstrap,
   faXbox,
+  faFigma,
+  faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { Col, Container, Row } from "react-bootstrap";
@@ -25,14 +27,14 @@ export default function Tools() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="d-flex flex-wrap justify-content-around">
+          <Col lg={12} className="tools-grid">
             {toolsContents.map((content, i) => (
-              <div className="tools-card mt-3" key={i}>
+              <div className="tools-card" key={i}>
                 <div className="tools-card-header">
                   <FontAwesomeIcon icon={content.icon} />
                 </div>
-                <div className="tools-card-body mt-3 d-none d-md-block">
-                  <h5>{content.title}</h5>
+                <div className="tools-card-body">
+                  <h5 className="description">{content.title}</h5>
                 </div>
               </div>
             ))}
@@ -73,15 +75,15 @@ const toolsContents = [
     title: "Tailwind",
   },
   {
-    icon: faCss3,
+    icon: faFigma,
     title: "Figma",
   },
   {
-    icon: faJs,
+    icon: faFigma,
     title: "Illustrator",
   },
   {
-    icon: faReact,
+    icon: faGitAlt,
     title: "GIT",
   },
 ];

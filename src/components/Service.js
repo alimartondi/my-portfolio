@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Uiux from "../image/uiux.svg";
+import Uiux from "../image/uiux-design.svg";
 import Frontend from "../image/frontend.svg";
 import Design from "../image/design.svg";
 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="120px" height="133px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 120 133"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="736" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Poppins">
+		<font-face-src>
+			<font-face-name name="Poppins Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="I" horiz-adv-x="295" d="M233.01 702.082l0 -702.082 -171.023 0 0 702.082 171.023 0z"/>
+   <glyph unicode="U" horiz-adv-x="705" d="M230 701.997l0 -420.011c0,-41.9681 10.3477,-74.3305 31.002,-96.9636 20.6542,-22.6743 50.9966,-34.0115 90.9858,-34.0115 40.0305,0 70.7026,11.3372 92.0165,34.0115 21.3551,22.6331 31.9914,54.9955 31.9914,96.9636l0 420.011 171.006 0 0 -418.98c0,-62.6636 -13.316,-115.68 -39.9892,-159.009 -26.6732,-43.3286 -62.4987,-76.0208 -107.517,-97.9943 -44.9776,-22.0147 -95.1497,-33.022 -150.475,-33.022 -55.3666,0 -104.838,10.8424 -148.496,32.5273 -43.6996,21.6437 -78.2058,54.3359 -103.519,97.9943 -25.354,43.6584 -38.0104,96.8399 -38.0104,159.503l0 418.98 171.006 0z"/>
+   <glyph unicode="X" horiz-adv-x="715" d="M491.991 0l-142.972 214.994 -126.028 -214.994 -194.01 0 225.012 357.017 -230 344.979 198.998 0 141.034 -211.984 123.967 211.984 194.01 0 -222.992 -354.008 232.02 -347.989 -199.039 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Poppins";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil7 {fill:#D5DBE1}
+    .fil4 {fill:#099E9A;fill-rule:nonzero}
+    .fil3 {fill:#0ABAB5;fill-rule:nonzero}
+    .fil6 {fill:#323337;fill-rule:nonzero}
+    .fil5 {fill:#A4AFC1;fill-rule:nonzero}
+    .fil2 {fill:#D5DBE1;fill-rule:nonzero}
+    .fil1 {fill:#F3F3F1;fill-rule:nonzero}
+    .fil0 {fill:#F8F9FA;fill-rule:nonzero}
+    .fnt0 {font-weight:bold;font-size:28.65px;font-family:'Poppins'}
+    .fnt1 {font-weight:bold;font-size:29.02px;font-family:'Poppins'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2108661882320">
+   <path class="fil0" d="M23.25 119.34c26.42,0 44.56,13.68 57.29,13.68 12.73,0 39.46,-7.32 39.46,-65.88 0,-58.56 -35.97,-67.16 -49.97,-67.16 -65.56,0 -93.57,119.36 -46.78,119.36z"/>
+   <path class="fil1" d="M83.87 99.92l0 1.91c0,4.22 -3.42,7.64 -7.64,7.64l-47.74 0c-4.22,0 -7.64,-3.42 -7.64,-7.64l0 -51.56c0,-4.22 3.42,-7.64 7.64,-7.64l55.38 0 0 57.29z"/>
+   <path class="fil2" d="M29.45 101.83l0 -51.56c0,-4.22 3.41,-7.64 7.63,-7.64l-8.59 0c-4.22,0 -7.64,3.42 -7.64,7.64l0 51.56c0,4.22 3.42,7.64 7.64,7.64l8.59 0c-4.22,0 -7.63,-3.42 -7.63,-7.64z"/>
+   <path class="fil3" d="M91.51 86.55l-40.1 0c-4.22,0 -7.64,-3.41 -7.64,-7.63l0 -47.75c0,-4.22 3.42,-7.63 7.64,-7.63l33.41 0 6.18 -0.42c4.41,-0.29 8.15,3.21 8.15,7.63l0 48.17c0,4.22 -3.42,7.63 -7.64,7.63z"/>
+   <path class="fil4" d="M52.36 78.92l0 -47.75c0,-4.22 3.42,-7.63 7.64,-7.63l-8.59 0c-4.22,0 -7.64,3.41 -7.64,7.63l0 47.75c0,4.22 3.42,7.63 7.64,7.63l8.59 0c-4.22,0 -7.64,-3.41 -7.64,-7.63z"/>
+   <polygon class="fil5" points="91.9,100.33 94.6,97.63 100,103.03 97.3,105.73 "/>
+   <polygon class="fil5" points="107.42,115.86 110.12,113.16 115.52,118.56 112.82,121.26 "/>
+   <polygon class="fil5" points="91.22,118.58 96.62,113.18 99.32,115.88 93.92,121.28 "/>
+   <polygon class="fil5" points="106.75,103.06 112.15,97.66 114.85,100.36 109.45,105.76 "/>
+   <path class="fil2" d="M17.99 22.58c-3.16,0 -5.73,-2.57 -5.73,-5.73 0,-3.16 2.57,-5.73 5.73,-5.73 3.16,0 5.73,2.57 5.73,5.73 0,3.16 -2.57,5.73 -5.73,5.73zm0 -7.64c-1.06,0 -1.91,0.86 -1.91,1.91 0,1.06 0.85,1.91 1.91,1.91 1.05,0 1.91,-0.85 1.91,-1.91 0,-1.05 -0.86,-1.91 -1.91,-1.91z"/>
+   <path class="fil6" d="M76.23 112.33l-47.74 0c-5.79,0 -10.5,-4.7 -10.5,-10.5l0 -51.56c0,-5.79 4.71,-10.5 10.5,-10.5l1.91 0 0 5.73 -1.91 0c-2.63,0 -4.77,2.14 -4.77,4.77l0 51.56c0,2.63 2.14,4.78 4.77,4.78l47.74 0c2.63,0 4.78,-2.15 4.78,-4.78l0 -1.91 5.73 0 0 1.91c0,5.8 -4.71,10.5 -10.51,10.5z"/>
+   <path class="fil6" d="M91.51 89.42l-40.1 0c-5.8,0 -10.51,-4.71 -10.51,-10.5l0 -47.75c0,-5.79 4.71,-10.5 10.51,-10.5l40.1 0c5.79,0 10.5,4.71 10.5,10.5l0 47.75c0,5.79 -4.71,10.5 -10.5,10.5zm-40.1 -63.02c-2.63,0 -4.78,2.14 -4.78,4.77l0 47.75c0,2.63 2.15,4.77 4.78,4.77l40.1 0c2.63,0 4.77,-2.14 4.77,-4.77l0 -47.75c0,-2.63 -2.14,-4.77 -4.77,-4.77l-40.1 0z"/>
+  </g>
+  <g transform="matrix(0.999986 0 0 1 -6.12353 11.4974)">
+   <text x="60" y="66.5"  class="fil7 fnt0">UX</text>
+  </g>
+  <text x="53.85" y="52.87"  class="fil7 fnt1">UI</text>
+ </g>
+</svg>

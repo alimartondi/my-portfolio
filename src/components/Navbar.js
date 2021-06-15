@@ -4,7 +4,6 @@ import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/batubara_org.svg";
 import BatubaraWhite from "../image/batubara_white.svg";
-// import { Link, Link } from "react-router-dom";
 import { Link, animateScroll } from "react-scroll";
 
 export default function NavBar() {
@@ -68,6 +67,16 @@ export default function NavBar() {
               onClick={open}
             >
               Portfolio
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              spy={true}
+              offset={-180}
+              className="nav-link"
+              onClick={open}
+            >
+              Contact
             </Link>
             <Link
               to="tools"

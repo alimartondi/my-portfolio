@@ -2,7 +2,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
-import Idf from "../image/idf.png";
+import Idf from "../image/web-idf.png";
 
 export default function Project() {
   return (
@@ -11,7 +11,7 @@ export default function Project() {
         <Row className="align-items-lg-center">
           <Col
             md={6}
-            className="text-left pr-md-5 order-2 order-md-1 mt-4 mt-md-0"
+            className="text-left pr-md-5 order-2 order-md-1 mt-5 mt-md-0"
           >
             <h2 className="second-title">
               Buah dari pertama kali kenalan dengan React
@@ -31,8 +31,10 @@ export default function Project() {
               <FontAwesomeIcon icon={faChevronRight} className="ml-2 small" />
             </Button>
           </Col>
-          <Col md={6} className="project-image order-1 order-md-2">
-            <img src={Idf} alt="project-idf" className="img-fluid" />
+          <Col md={6} className="order-1 order-md-2">
+            <div className="project-image">
+              <img src={Idf} alt="project-idf" className="img-fluid" />
+            </div>
           </Col>
         </Row>
       </Container>
