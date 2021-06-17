@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
-  faCss3,
+  faCss3Alt,
   faHtml5,
   faJs,
   faBootstrap,
@@ -10,6 +10,9 @@ import {
   faFigma,
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
+import Tailwind from "../image/tailwind.svg";
+import Illustrator from "../image/illustrator.svg";
+import Adobexd from "../image/adobexd.svg";
 
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -32,9 +35,10 @@ export default function Tools() {
               <div className="tools-card" key={i}>
                 <div className="tools-card-header">
                   <FontAwesomeIcon icon={content.icon} />
+                  <img src={content.img} alt="" />
                 </div>
                 <div className="tools-card-body">
-                  <h5 className="description">{content.title}</h5>
+                  <h5 className="card-title">{content.title}</h5>
                 </div>
               </div>
             ))}
@@ -51,7 +55,7 @@ const toolsContents = [
     title: "HTML",
   },
   {
-    icon: faCss3,
+    icon: faCss3Alt,
     title: "CSS",
   },
   {
@@ -63,27 +67,27 @@ const toolsContents = [
     title: "React Js",
   },
   {
-    icon: faXbox,
-    title: "Adobe XD",
+    img: Tailwind,
+    title: "Tailwindcss",
   },
   {
     icon: faBootstrap,
     title: "Bootstrap",
   },
   {
-    icon: faHtml5,
-    title: "Tailwind",
+    icon: faGitAlt,
+    title: "GIT",
   },
   {
     icon: faFigma,
     title: "Figma",
   },
   {
-    icon: faFigma,
-    title: "Illustrator",
+    img: Adobexd,
+    title: "Adobe XD",
   },
   {
-    icon: faGitAlt,
-    title: "GIT",
+    img: Illustrator,
+    title: "Illustrator",
   },
 ];

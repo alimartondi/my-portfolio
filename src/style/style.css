@@ -76,6 +76,10 @@
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.portfolio-card .card-header{
+  border-radius: 10px;
+  overflow: hidden;
+}
 .project-image {
   border-radius: 10px;
   position: relative;
@@ -174,9 +178,8 @@
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   padding: 8px;
 }
-.tools-card-body .description{
+.tools-card-body .card-title{
   color: var(--main-dark);
-  font-weight: 500;
 }
 
 /* ===Footer=== */

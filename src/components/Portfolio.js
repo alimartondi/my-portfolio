@@ -1,10 +1,15 @@
 import React from "react";
 import { Row, Col, Container, Card } from "react-bootstrap";
 import Courses from "../image/alianda-courses.png";
-import Myportfolio from "../image/my-portfolio.png";
+import Myportfolio from "../image/my-portfolio1.png";
 import Gadjian from "../image/gadjian.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFigma,
+  faReact,
+  faBootstrap,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Portfolio() {
   return (
@@ -32,16 +37,24 @@ export default function Portfolio() {
                     />
                   </Card.Header>
                   <Card.Body className="px-3">
-                    <p className="card-title">{content.title}</p>
-                    <p className="description">{content.body}</p>
+                    <p className="card-title m-0">{content.title}</p>
+                    <p className="description mt-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Animi, reiciendis!
+                    </p>
+                    <div className="card-content d-flex justify-content-start">
+                      <FontAwesomeIcon icon={faFigma} />
+                      <FontAwesomeIcon icon={faReact} />
+                      <FontAwesomeIcon icon={faBootstrap} />
+                      <Card.Link
+                        href={content.link}
+                        target="blank"
+                        className="ml-auto"
+                      >
+                        <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                      </Card.Link>
+                    </div>
                   </Card.Body>
-                  <Card.Link
-                    className="text-right py-3 px-4"
-                    href={content.link}
-                    target="blank"
-                  >
-                    <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-                  </Card.Link>
                 </Card>
               ))}
             </div>
@@ -58,21 +71,21 @@ const webDesignContents = [
     image: Courses,
     alt: "Landing page ounline courses",
     title: "Ounline Courses",
-    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",
+    body: "Made with React & Bootstrap",
     link: "https://aliandacourses.netlify.app/",
   },
   {
     image: Myportfolio,
     alt: "Landing page my portfolio",
     title: "My Portfolio",
-    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",
+    body: "Made with React & Bootstrap",
     link: "https://aliandabatubara.netlify.app/",
   },
   {
     image: Gadjian,
     alt: "Admin dashboard gadjian",
     title: "Gadjian",
-    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quia?",
+    body: "Made with React & Bootstrap",
     link: "https://aliandagadjian.netlify.app/",
   },
 ];
