@@ -54,7 +54,7 @@ const contents = [
   },
   {
     image: Frontend,
-    title: "Front-end",
+    title: "Frontend Development",
     description:
       "Untuk Frontend saya menggunakan React, Bootstrap dan Tailwind, atau murni CSS",
   },

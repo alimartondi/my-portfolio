@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Button, Container, Row, Col, Card } from "react-bootstrap";
 import Alianda from "../image/a__about.png";
 
 export default function Contact() {
@@ -8,9 +8,9 @@ export default function Contact() {
       <Container>
         <Row>
           <Col lg={12}>
-            <div className="contact-card mt-lg-5">
+            <Card className="contact-card mt-lg-5 py-5 border-0">
               <div className="contact-card__body d-block d-md-flex align-items-md-center justify-content-md-between px-4 px-lg-0 ">
-                <div className="contact-card__content pl-md-3 pl-lg-5">
+                <div className="contact-card__content pl-md-3 pl-lg-5 text-center text-md-left">
                   <h1 className="second-title text-light">
                     Tertarik bekerja sama dengan saya?
                   </h1>
@@ -19,7 +19,8 @@ export default function Contact() {
                     pekerjaan full time
                   </p>
                   <Button
-                    className="second-button px-3 mt-3 mb-4 mb-md-0"
+                    variant="second-button"
+                    className="px-3 mt-3 mb-lg-0 rounded-lg"
                     href="mailto:alimartondi88@gmail.com"
                   >
                     Kontak Saya
@@ -31,7 +32,7 @@ export default function Contact() {
                   className="card-contact-img text-center pr-md-3 pr-lg-5 img-fluid "
                 />
               </div>
-            </div>
+            </Card>
           </Col>
         </Row>
       </Container>

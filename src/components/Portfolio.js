@@ -1,15 +1,8 @@
 import React from "react";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { Row, Col, Container, Card, Button } from "react-bootstrap";
 import Courses from "../image/alianda-courses.png";
-import Myportfolio from "../image/my-portfolio1.png";
+import Myportfolio from "../image/my-portfolio.png";
 import Gadjian from "../image/gadjian.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFigma,
-  faReact,
-  faBootstrap,
-} from "@fortawesome/free-brands-svg-icons";
 
 export default function Portfolio() {
   return (
@@ -25,7 +18,7 @@ export default function Portfolio() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="portfolio-items pl-md-2">
+          <div className="portfolio-items pl-md-2">
             <div className="portfolio-items__grid">
               {webDesignContents.map((content, i) => (
                 <Card className="portfolio-card border-0 text-left" key={i}>
@@ -36,29 +29,23 @@ export default function Portfolio() {
                       className="img-fluid"
                     />
                   </Card.Header>
-                  <Card.Body className="px-3">
-                    <p className="card-title m-0">{content.title}</p>
-                    <p className="description mt-2">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Animi, reiciendis!
-                    </p>
-                    <div className="card-content d-flex justify-content-start">
-                      <FontAwesomeIcon icon={faFigma} />
-                      <FontAwesomeIcon icon={faReact} />
-                      <FontAwesomeIcon icon={faBootstrap} />
-                      <Card.Link
-                        href={content.link}
-                        target="blank"
-                        className="ml-auto"
-                      >
-                        <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-                      </Card.Link>
+                  <Card.Body className="px-3 d-flex align-items-center justify-content-between">
+                    <div className="card-content">
+                      <p className="card-title m-0">{content.title}</p>
+                      <p className="small">Figma, React & Bootsrtap</p>
                     </div>
+                    <Button
+                      href={content.link}
+                      target="blank"
+                      variant="third-button rounded-lg px-4"
+                    >
+                      View
+                    </Button>
                   </Card.Body>
                 </Card>
               ))}
             </div>
-          </Col>
+          </div>
         </Row>
       </Container>
       <Container className="px-0"></Container>

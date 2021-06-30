@@ -5,7 +5,7 @@
 }
 
 .hero-content {
-  max-width: 27rem;
+  max-width: 100%;
   padding-top: 150px;
 }
 
@@ -16,7 +16,7 @@
 .hero-image::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0;
   background-image: linear-gradient(
     to top,
@@ -44,7 +44,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .service-items__grid,
@@ -67,17 +67,17 @@
   background-color: var(--main-light);
   color: var(--main-dark);
   text-align: center;
-  width: 280px;
+  width: 300px;
   border-radius: 10px;
   overflow: hidden;
-  margin-right: 1.8rem;
+  margin-right: 1.5rem;
   transition: 0.3s ease-in-out;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
 }
 
 .portfolio-card .card-header{
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
 .project-image {
@@ -117,7 +117,7 @@
   position: relative;
   overflow: hidden;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   text-align: center;
 }
 
@@ -125,7 +125,7 @@
   max-width: 100%;
 }
 
-.contact-card__body .contact-card__content .second-button {
+.contact-card__content .btn.btn-second-button {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -133,18 +133,30 @@
   width: 90%;
   z-index: 3;
   margin: 0 auto;
-  box-shadow: none !important;
+  margin-bottom: 2rem;
+  box-shadow: none;
 }
-
+.contact-card::before{
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: -16px;
+  z-index: -1;
+  background: #def1ff;
+  border-radius: 15px;
+  
+}
 .contact-card::after {
   content: "";
   position: absolute;
   z-index: 2;
   bottom: 0;
   left: 0;
-  margin-bottom: 29px;
+  margin-bottom: 47px;
   width: 100%;
-  height: 50%;
+  height: 30%;
   border-radius: 0 0 8px 8px;
   background: rgb(10, 186, 181);
   background: linear-gradient(
@@ -154,33 +166,33 @@
   );
 }
 
+
+
 /* ===End of Contact=== */
 
 /* ===Tools Section=== */
-.tools-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
-  padding: 2rem 0;
-}
 
 .tools-card {
+  width: 100px;
+  height: 100px;
   justify-content: center;
   text-align: center;
-  width: 100px;
-  height: 105px;
-  font-size: 2.6rem;
   color: var(--main-blue);
   background-color: white;
   border-radius: 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  -webkit-box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
   padding: 8px;
 }
+.tools-card img{
+  max-width: 70px;
+  max-height: 70px;
+}
+
 .tools-card-body .card-title{
   color: var(--main-dark);
 }
+
 
 /* ===Footer=== */
 .footer {
@@ -242,7 +254,7 @@
 
 /* ===RESPONSIVE=== */
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   /* ===Hero=== */
   .hero {
     padding-top: 20px;
@@ -251,6 +263,9 @@
     padding-top: 165px;
     max-width: 33rem;
     line-height: 2.3rem;
+  }
+  .hero-content .description{
+    max-width: 30rem;
   }
 
   .hero-image {
@@ -271,7 +286,7 @@
   .service-items__grid,
   .portfolio-items__grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5rem;
     padding: 1.9rem;
   }
@@ -280,13 +295,6 @@
   .portfolio-card {
     margin-right: 0;
     width: auto;
-    box-shadow: none;
-  }
-
-  .service-card:hover,
-  .portfolio-card:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
   .project-image::after{
@@ -296,19 +304,15 @@
     right: 0;
   }
 
-  .tools-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 1.5rem;
-  row-gap: 1.5rem;
-}
+ 
 
   .tools-card {
-    font-size: 5rem;
-    width: auto;
-    height: 180px;
-    box-shadow: none;
-    transition: ease-in-out 0.3s;
+    width: 150px;
+    height: 150px;
+  }
+  .tools-card img{
+    max-width: 100px;
+    max-height: 100px;
   }
 
   .tools-card-body .description{
@@ -317,25 +321,18 @@
   font-weight: 500;
 }
 
-  .tools-card:hover {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  }
-
   .contact-card {
     background-color: var(--main-blue);
     border-radius: 10px;
     position: relative;
     overflow: visible;
-    padding-top: 28px;
-    text-align: left;
   }
 
   .contact-card__content {
     max-width: 40%;
   }
 
-  .contact-card .contact-card__body .second-button {
+  .contact-card__content .btn.btn-second-button {
     position: relative;
     bottom: 0;
     width: 150px;

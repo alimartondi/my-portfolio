@@ -1,7 +1,7 @@
 import React from "react";
+import BatubaraWhite from "../image/batubara_white.svg";
 import { Container, Row, Col } from "react-bootstrap";
 import { animateScroll as scroll } from "react-scroll";
-import BatubaraWhite from "../image/batubara_white.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -65,7 +65,7 @@ export default function Footer() {
           <Col lg={12} className="text-right">
             <hr />
             <h6 className="copyright-text text-center text-md-right mb-3">
-              &copy; All Rights Reserved.
+              &copy; Alianda 2021 | Made with &#10084;
             </h6>
           </Col>
         </Row>

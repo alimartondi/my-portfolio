@@ -72,7 +72,7 @@ export default function NavBar() {
               to="contact"
               smooth={true}
               spy={true}
-              offset={-180}
+              offset={-150}
               className="nav-link"
               onClick={open}
             >

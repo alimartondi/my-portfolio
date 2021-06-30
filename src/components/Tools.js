@@ -1,20 +1,13 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faReact,
-  faCss3Alt,
-  faHtml5,
-  faJs,
-  faBootstrap,
-  faXbox,
-  faFigma,
-  faGitAlt,
-} from "@fortawesome/free-brands-svg-icons";
+import htmlLogo from "../image/html.svg";
+import cssLogo from "../image/css.svg";
+import jsLogo from "../image/javascript.svg";
+import reactLogo from "../image/react.svg";
 import Tailwind from "../image/tailwind.svg";
-import Illustrator from "../image/illustrator.svg";
-import Adobexd from "../image/adobexd.svg";
+import bootstrapLogo from "../image/bootstrap.svg";
+import gitLogo from "../image/git.svg";
 
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Card } from "react-bootstrap";
 
 export default function Tools() {
   return (
@@ -30,17 +23,25 @@ export default function Tools() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="tools-grid">
+          <Col
+            lg={12}
+            className="tools-grid d-flex flex-wrap justify-content-between align-items-center py-3"
+          >
             {toolsContents.map((content, i) => (
-              <div className="tools-card" key={i}>
-                <div className="tools-card-header">
-                  <FontAwesomeIcon icon={content.icon} />
-                  <img src={content.img} alt="" />
-                </div>
+              <Card
+                className="tools-card border-0 align-items-center mb-3"
+                key={i}
+              >
+                <img
+                  src={content.image}
+                  className="img-fluid"
+                  alt={content.title}
+                />
+
                 <div className="tools-card-body">
-                  <h5 className="card-title">{content.title}</h5>
+                  {/* <h6 className="card-title">{content.title}</h6> */}
                 </div>
-              </div>
+              </Card>
             ))}
           </Col>
         </Row>
@@ -51,43 +52,31 @@ export default function Tools() {
 
 const toolsContents = [
   {
-    icon: faHtml5,
+    image: htmlLogo,
     title: "HTML",
   },
   {
-    icon: faCss3Alt,
+    image: cssLogo,
     title: "CSS",
   },
   {
-    icon: faJs,
+    image: jsLogo,
     title: "JavaScript",
   },
   {
-    icon: faReact,
+    image: reactLogo,
     title: "React Js",
   },
   {
-    img: Tailwind,
+    image: Tailwind,
     title: "Tailwindcss",
   },
   {
-    icon: faBootstrap,
+    image: bootstrapLogo,
     title: "Bootstrap",
   },
   {
-    icon: faGitAlt,
+    image: gitLogo,
     title: "GIT",
-  },
-  {
-    icon: faFigma,
-    title: "Figma",
-  },
-  {
-    img: Adobexd,
-    title: "Adobe XD",
-  },
-  {
-    img: Illustrator,
-    title: "Illustrator",
   },
 ];

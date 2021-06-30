@@ -1,6 +1,6 @@
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import Idf from "../image/web-idf.png";
 
@@ -20,14 +20,14 @@ export default function Project() {
               Pertama kali dikenalin React oleh teman, membuat Website Landing
               Page untuk Infradigital Foundation. Dapat tugas untuk
               menerjemahkan desain UI kedalam kode HTML dan CSS menggunakan
-              Bootstrap.
+              React dan Bootstrap.
             </h5>
             <Button
-              className="main-button"
+              variant="main-button"
               href="https://foundation.infradigital.io/"
               target="blank"
             >
-              Lebih lanjut
+              Selengkapnya
               <FontAwesomeIcon icon={faChevronRight} className="ml-2 small" />
             </Button>
           </Col>

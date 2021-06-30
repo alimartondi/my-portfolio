@@ -170,7 +170,7 @@ body {
   font-weight: 600;
 }
 
-@media (min-width: 756px) {
+@media (min-width: 1024px) {
   .main-title {
     font-size: 55px;
     line-height: 3.8rem;
@@ -192,8 +192,8 @@ body {
 }
 
 /* ====ALL BUTTON STYLE=== */
-.main-button,
-.second-button {
+.btn.btn-main-button,
+.btn.btn-second-button {
   display: inline-block;
   font-weight: 500;
   font-size: 15px;
@@ -204,41 +204,47 @@ body {
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.main-button:active,
-.main-button:focus,
-.main-button:hover,
-.second-button:active,
-.second-button:focus,
-.second-button:hover {
+.btn.btn-main-button:active,
+.btn.btn-main-button:focus,
+.btn.btn-main-button:hover,
+.btn.btn-second-button:active,
+.btn.btn-second-button:focus,
+.btn.btn-second-button:hover {
   outline: none;
   box-shadow: none;
 }
 
-.main-button {
+.btn.btn-main-button {
   background-color: var(--main-blue);
   border-color: var(--main-blue);
   color: var(--main-light);
 }
 
-.second-button {
+.btn.btn-second-button {
   background-color: var(--main-light);
   border-color: var(--main-light);
   color: var(--main-blue);
 }
 
-.main-button:hover,
-.main-button:focus,
-.main-button:active {
-  background-color: var(--second-blue) !important;
+.btn.btn-main-button:hover,
+.btn.btn-main-button:focus,
+.btn.btn-main-button:active {
+  background-color: var(--second-blue);
   border-color: var(--second-blue) !important;
 }
 
-.second-button:hover,
-.second-button:focus,
-.second-button:active {
+.btn.btn-second-button:hover,
+.btn.btn-second-button:focus,
+.btn.btn-second-button:active {
   background-color: #e2e6ea !important;
   border-color: #e2e6ea !important;
   color: var(--main-blue) !important;
+}
+
+.btn.btn-third-button {
+  background-color: #def1ff;
+  font-size: 14px;
+  color: var(--main-blue);
 }
 
 .html {
