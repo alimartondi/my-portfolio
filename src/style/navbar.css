@@ -2,13 +2,15 @@
   position: relative;
   z-index: 999;
   padding: 0;
-  height: 55px;
+  height: 60px;
   width: 100%;
   position: fixed;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .navbar.scrolled {
@@ -45,6 +47,7 @@
   transition: all 0.3s ease;
   opacity: 1;
 }
+
 .nav-items.active .nav-link:hover {
   color: #f0f0f0;
 }

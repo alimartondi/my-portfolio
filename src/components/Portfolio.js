@@ -10,10 +10,10 @@ export default function Portfolio() {
       <Container className="px-0">
         <Row>
           <Col lg={7} className="portfolio-intro text-center mx-auto">
-            <h2 className="second-title">Sudah pernah buat apa</h2>
+            <h2 className="second-title">Portofolio</h2>
             <p className="description px-2 px-md-5">
-              Beberapa project website yang sudah dideploy menggunakan layanan
-              gratis dari netlify
+              Beberapa website yang sudah dideploy menggunakan layanan hosting
+              dari netlify
             </p>
           </Col>
         </Row>

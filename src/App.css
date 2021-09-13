@@ -141,15 +141,15 @@ body {
 /* ===ALL TITLE STYLE=== */
 .main-title {
   color: var(--main-dark);
-  font-size: 34px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 3rem;
 }
 
 .second-title {
   color: var(--main-dark);
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -170,38 +170,17 @@ body {
   font-weight: 600;
 }
 
-@media (min-width: 1024px) {
-  .main-title {
-    font-size: 55px;
-    line-height: 3.8rem;
-  }
-
-  .second-title {
-    font-size: 36px;
-    font-weight: 600;
-  }
-
-  .third-title {
-    font-size: 32px;
-    font-weight: 600;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-}
-
 /* ====ALL BUTTON STYLE=== */
 .btn.btn-main-button,
 .btn.btn-second-button {
   display: inline-block;
   font-weight: 500;
   font-size: 15px;
-  padding: 0.7rem 1.6rem;
-  cursor: pointer;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
   transition: 0.4s ease-in-out 0s;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .btn.btn-main-button:active,
@@ -221,9 +200,9 @@ body {
 }
 
 .btn.btn-second-button {
-  background-color: var(--main-light);
-  border-color: var(--main-light);
-  color: var(--main-blue);
+  /* background-color: var(--main-light); */
+  border-color: var(--main-dark);
+  color: var(--main-dark);
 }
 
 .btn.btn-main-button:hover,
@@ -249,4 +228,29 @@ body {
 
 .html {
   scroll-behavior: smooth;
+}
+
+@media (min-width: 1024px) {
+  .main-title {
+    font-size: 60px;
+    line-height: 3.8rem;
+  }
+
+  .second-title {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .third-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .btn.btn-main-button {
+    padding: 0.7rem 1.7rem;
+  }
 }

@@ -13,9 +13,7 @@ export default function Project() {
             md={6}
             className="text-left pr-md-5 order-2 order-md-1 mt-5 mt-md-0"
           >
-            <h2 className="second-title">
-              Buah dari pertama kali kenalan dengan React
-            </h2>
+            <h2 className="second-title">Pertama kali kenal React</h2>
             <h5 className="description mt-4 mb-5">
               Pertama kali dikenalin React oleh teman, membuat Website Landing
               Page untuk Infradigital Foundation. Dapat tugas untuk
@@ -23,7 +21,7 @@ export default function Project() {
               React dan Bootstrap.
             </h5>
             <Button
-              variant="main-button"
+              variant="second-button"
               href="https://foundation.infradigital.io/"
               target="blank"
             >

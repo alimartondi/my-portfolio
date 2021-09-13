@@ -9,22 +9,26 @@ export default function Hero() {
       <Container>
         <Row className="hero d-block d-md-flex justify-content-between">
           <Col md={6} className="hero-content">
+            <p className="description">Halo, nama saya</p>
             <h1 className="main-title">
-              Hallo, Saya Seorang Frontend Developer
+              Alimartondi
+              <br />
+              Batubara
             </h1>
-            <p className="description mt-4">
-              Lulusan Teknik Informatika, bisa React, Bootstrap dan Tailwindcss.
-              Selain Programming saya juga menyukai Desain UI-UX, Fotografi dan
-              Desain Grafis.
+            <p className="description mt-3">
+              Lulusan Teknik Informatika, bisa menggunakan React, Tailwindcss
+              dan bootsrap. Selain Programming saya juga menyukai Desain UI-UX,
+              Fotografi dan Desain Grafis.
             </p>
-
-            <Button
-              variant="main-button"
-              href="mailto:alimartondi88@gmail.com"
-              className="main-button mt-4"
-            >
-              Hubungi Saya
-            </Button>
+            <div className="hero-content__cta d-flex justify-content-between">
+              <Button
+                variant="main-button"
+                href="mailto:alimartondi88@gmail.com"
+                className="mt-5"
+              >
+                Hubungi Saya
+              </Button>
+            </div>
           </Col>
           <Col
             md={6}

@@ -10,10 +10,9 @@ export default function Service() {
       <Container className="px-0">
         <Row className="justify-content-center">
           <Col lg={6} className="text-center px-3">
-            <h2 className="second-title">Yang saya kerjakan</h2>
+            <h2 className="second-title">Kemampuan</h2>
             <h5 className="description">
-              Selain programming, saya juga menyukai UI-UX Design dan Graphic
-              Design seperti membuat logo, poster dll.
+              Selain programming, saya juga menyukai UI-UX & Graphic Design
             </h5>
           </Col>
         </Row>
@@ -60,7 +59,7 @@ const contents = [
   },
   {
     image: Design,
-    title: "Web Design",
+    title: "Graphic Design",
     description:
       "Untuk melengkapi logo dan banner website menggunakan Illustrator atau CorelDraw",
   },
