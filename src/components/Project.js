@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { Col, Container, Row, Button } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Idf from "../image/web-idf.png";
 
 export default function Project() {
@@ -20,14 +20,10 @@ export default function Project() {
               menerjemahkan desain UI kedalam kode HTML dan CSS menggunakan
               React dan Bootstrap.
             </h5>
-            <Button
-              variant="second-button"
-              href="https://foundation.infradigital.io/"
-              target="blank"
-            >
+            <a href="https://foundation.infradigital.io/" target="blank">
               Selengkapnya
               <FontAwesomeIcon icon={faChevronRight} className="ml-2 small" />
-            </Button>
+            </a>
           </Col>
           <Col md={6} className="order-1 order-md-2">
             <div className="project-image">

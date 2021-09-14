@@ -7,7 +7,7 @@ import Gadjian from "../image/gadjian.png";
 export default function Portfolio() {
   return (
     <section className="portfolio " id="portfolio">
-      <Container className="px-0">
+      <Container>
         <Row>
           <Col lg={7} className="portfolio-intro text-center mx-auto">
             <h2 className="second-title">Portofolio</h2>
@@ -17,35 +17,33 @@ export default function Portfolio() {
             </p>
           </Col>
         </Row>
-        <Row>
-          <div className="portfolio-items pl-md-2">
-            <div className="portfolio-items__grid">
-              {webDesignContents.map((content, i) => (
-                <Card className="portfolio-card border-0 text-left" key={i}>
-                  <Card.Header className="p-0 border-0">
-                    <img
-                      src={content.image}
-                      alt={content.alt}
-                      className="img-fluid"
-                    />
-                  </Card.Header>
-                  <Card.Body className="px-3 d-flex align-items-center justify-content-between">
-                    <div className="card-content">
-                      <p className="card-title m-0">{content.title}</p>
-                      <p className="small">Figma, React & Bootsrtap</p>
-                    </div>
-                    <Button
-                      href={content.link}
-                      target="blank"
-                      variant="third-button rounded-lg px-4"
-                    >
-                      View
-                    </Button>
-                  </Card.Body>
-                </Card>
-              ))}
-            </div>
-          </div>
+        <Row className="mt-4">
+          {webDesignContents.map((content, i) => (
+            <Col lg={4} className="portfolio-items pl-md-2">
+              <Card className="portfolio-card border-0 text-start mt-4" key={i}>
+                <Card.Header className="p-0 border-0">
+                  <img
+                    src={content.image}
+                    alt={content.alt}
+                    className="img-fluid"
+                  />
+                </Card.Header>
+                <Card.Body className="px-3 d-flex align-items-center justify-content-between">
+                  <div className="card-content">
+                    <p className="card-title m-0">{content.title}</p>
+                    <p className="small">Figma, React & Bootsrtap</p>
+                  </div>
+                  <Button
+                    href={content.link}
+                    target="blank"
+                    variant="third-button rounded-lg px-4"
+                  >
+                    View
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
       <Container className="px-0"></Container>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Container, Row, Col, Card } from "react-bootstrap";
-import Alianda from "../image/a__about.png";
 
 export default function Contact() {
   return (
@@ -20,17 +19,13 @@ export default function Contact() {
                   </p>
                   <Button
                     variant="second-button"
-                    className="px-3 mt-3 mb-lg-0 rounded-lg"
+                    size="lg"
+                    className="mt-5"
                     href="mailto:alimartondi88@gmail.com"
                   >
                     Kontak Saya
                   </Button>
                 </div>
-                <img
-                  src={Alianda}
-                  alt="alianda-batubara"
-                  className="card-contact-img text-center pr-md-3 pr-lg-5 img-fluid "
-                />
               </div>
             </Card>
           </Col>

@@ -40,7 +40,6 @@ export default function NavBar() {
             <hr className="d-block d-xl-none text-center" />
             <Link
               to="service"
-              smooth={true}
               spy={true}
               offset={-120}
               className="nav-link"
@@ -50,7 +49,6 @@ export default function NavBar() {
             </Link>
             <Link
               to="project"
-              smooth={true}
               spy={true}
               offset={-160}
               className="nav-link"
@@ -60,7 +58,6 @@ export default function NavBar() {
             </Link>
             <Link
               to="portfolio"
-              smooth={true}
               spy={true}
               offset={-120}
               className="nav-link"
@@ -70,7 +67,6 @@ export default function NavBar() {
             </Link>
             <Link
               to="contact"
-              smooth={true}
               spy={true}
               offset={-150}
               className="nav-link"
@@ -80,7 +76,6 @@ export default function NavBar() {
             </Link>
             <Link
               to="tools"
-              smooth={true}
               spy={true}
               offset={-120}
               className="nav-link"

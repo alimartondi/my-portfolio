@@ -5,7 +5,6 @@ import jsLogo from "../image/javascript.svg";
 import reactLogo from "../image/react.svg";
 import Tailwind from "../image/tailwind.svg";
 import bootstrapLogo from "../image/bootstrap.svg";
-import gitLogo from "../image/git.svg";
 
 import { Col, Container, Row, Card } from "react-bootstrap";
 
@@ -22,12 +21,9 @@ export default function Tools() {
             </p>
           </Col>
         </Row>
-        <Row>
-          <Col
-            lg={12}
-            className="tools-grid d-flex flex-wrap justify-content-between align-items-center py-3"
-          >
-            {toolsContents.map((content, i) => (
+        <Row md={3} xs={2}>
+          {toolsContents.map((content, i) => (
+            <Col md={4}>
               <Card
                 className="tools-card border-0 align-items-center mb-3"
                 key={i}
@@ -39,11 +35,13 @@ export default function Tools() {
                 />
 
                 <div className="tools-card-body">
-                  {/* <h6 className="card-title">{content.title}</h6> */}
+                  <h6 className="card-title d-none d-md-block">
+                    {content.title}
+                  </h6>
                 </div>
               </Card>
-            ))}
-          </Col>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>
@@ -74,9 +72,5 @@ const toolsContents = [
   {
     image: bootstrapLogo,
     title: "Bootstrap",
-  },
-  {
-    image: gitLogo,
-    title: "GIT",
   },
 ];

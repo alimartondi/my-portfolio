@@ -39,7 +39,7 @@ img {
   -webkit-user-drag: none;
   user-select: none;
 }
-
+/* 
 .col,
 .col-1,
 .col-10,
@@ -131,11 +131,11 @@ img {
 
 *:focus {
   outline: none !important;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f8f9fa;
+  background: #eeeffa;
 }
 
 /* ===ALL TITLE STYLE=== */
@@ -176,11 +176,9 @@ body {
   display: inline-block;
   font-weight: 500;
   font-size: 15px;
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 8px;
   transition: 0.4s ease-in-out 0s;
-  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .btn.btn-main-button:active,
@@ -200,9 +198,8 @@ body {
 }
 
 .btn.btn-second-button {
-  /* background-color: var(--main-light); */
-  border-color: var(--main-dark);
-  color: var(--main-dark);
+  background-color: var(--main-light);
+  color: var(--main-blue);
 }
 
 .btn.btn-main-button:hover,
@@ -232,13 +229,12 @@ body {
 
 @media (min-width: 1024px) {
   .main-title {
-    font-size: 60px;
+    font-size: 65px;
     line-height: 3.8rem;
   }
 
   .second-title {
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 45px;
   }
 
   .third-title {
@@ -251,6 +247,6 @@ body {
   }
 
   .btn.btn-main-button {
-    padding: 0.7rem 1.7rem;
+    padding: 1rem 2rem;
   }
 }
