@@ -15,10 +15,10 @@ export default function Hero() {
               Batubara.
             </h1>
             <hr className="w-25" />
-            <p className="description mt-3">
-              Lulusan Teknik Informatika, bisa menggunakan React, Tailwindcss
-              dan bootsrap. Selain Programming saya juga menyukai Desain UI-UX,
-              Fotografi dan Desain Grafis.
+            <p className="description mt-4">
+              Lulusan Sarjana Teknik Informatika Nusa Mandiri Jakarta. Bisa
+              menggunakan React, Tailwindcss dan Bootstrap. Selain Programming
+              saya juga menyukai dunia Fotografi dan Desain Grafis.
             </p>
             <Button
               variant="main-button"

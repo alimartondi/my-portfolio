@@ -18,15 +18,15 @@ export default function Footer() {
     <footer className="footer" id="footer">
       <Container>
         <Row>
-          <Col lg={12} className="footer-items text-center">
+          <Col lg={4} className="footer-items text-center mx-auto">
             <div className="footer-brand mt-5">
               <img
                 src={BatubaraWhite}
                 alt="footer-logo"
                 onClick={scrollToTop}
+                className="img-fluid"
               />
             </div>
-
             <h5 className="footer-email mt-4 mt-md-5">
               <a href="mailto:alimartondi88@gmail.com">
                 alimartondi88@gmail.com

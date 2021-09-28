@@ -1,10 +1,26 @@
-<svg width="154" height="92" viewBox="0 0 154 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M76.7277 0C56.2744 0 43.4918 10.2224 38.378 30.6654C46.0487 20.443 54.9969 16.611 65.2226 19.1656C71.0576 20.6232 75.2277 24.8561 79.8447 29.5396C87.3638 37.169 96.0665 45.999 115.077 45.999C135.529 45.999 148.313 35.7766 153.425 15.3317C145.756 25.5542 136.808 29.3881 126.581 26.8334C120.747 25.3758 116.577 21.143 111.96 16.4595C104.441 8.83004 95.7366 0 76.7277 0V0ZM38.378 45.999C17.9267 45.999 5.14215 56.2215 0.0302734 76.6663C7.69905 66.4439 16.6472 62.61 26.8748 65.1666C32.708 66.6261 36.878 70.857 41.495 75.5386C49.0142 83.168 57.7188 92 76.7277 92C97.181 92 109.964 81.7776 115.077 61.3327C107.407 71.5551 98.4584 75.389 88.2328 72.8325C82.3977 71.3768 78.2277 67.142 73.6107 62.4604C66.0915 54.831 57.3888 45.999 38.378 45.999V45.999Z" fill="#06B6D4"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="153.455" height="92" fill="white"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="144px" height="144px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 144 144"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="7.82" y1="36.35" x2="132.19" y2="108.04">
+   <stop offset="0" style="stop-opacity:1; stop-color:#2298BD"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#0ED7B5"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1828107241504">
+   <g>
+    <path class="fil0" d="M72 28.8c-19.2,0 -31.2,9.6 -36,28.8 7.2,-9.6 15.6,-13.2 25.2,-10.8 5.48,1.37 9.39,5.34 13.73,9.74 7.06,7.17 15.23,15.46 33.07,15.46 19.2,0 31.2,-9.6 36,-28.8 -7.2,9.6 -15.6,13.2 -25.2,10.8 -5.48,-1.37 -9.39,-5.34 -13.73,-9.74 -7.05,-7.17 -15.22,-15.46 -33.07,-15.46zm-36 43.2c-19.2,0 -31.2,9.6 -36,28.8 7.2,-9.6 15.6,-13.2 25.2,-10.8 5.48,1.37 9.39,5.34 13.73,9.74 7.05,7.17 15.22,15.46 33.07,15.46 19.2,0 31.2,-9.6 36,-28.8 -7.2,9.6 -15.6,13.2 -25.2,10.8 -5.48,-1.37 -9.39,-5.34 -13.73,-9.74 -7.06,-7.17 -15.23,-15.46 -33.07,-15.46z"/>
+   </g>
+  </g>
+ </g>
 </svg>

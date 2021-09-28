@@ -6,7 +6,7 @@ import Idf from "../image/web-idf.png";
 
 export default function Project() {
   return (
-    <section className="project pb-5" id="project">
+    <section className="project" id="project">
       <Container>
         <Row className="align-items-lg-center">
           <Col
@@ -22,7 +22,7 @@ export default function Project() {
             </h5>
             <a href="https://foundation.infradigital.io/" target="blank">
               Selengkapnya
-              <FontAwesomeIcon icon={faChevronRight} className="ml-2 small" />
+              <FontAwesomeIcon icon={faChevronRight} className="ms-2 small" />
             </a>
           </Col>
           <Col md={6} className="order-1 order-md-2">

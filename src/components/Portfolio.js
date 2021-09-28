@@ -1,47 +1,27 @@
 import React from "react";
-import { Row, Col, Container, Card, Button } from "react-bootstrap";
-import Courses from "../image/alianda-courses.png";
-import Myportfolio from "../image/my-portfolio.png";
-import Gadjian from "../image/gadjian.png";
+import { Row, Col, Container } from "react-bootstrap";
+import Courses from "../image/online-course.png";
+import Moriba from "../image/moriba.png";
 
 export default function Portfolio() {
   return (
-    <section className="portfolio " id="portfolio">
+    <section className="portfolio" id="portfolio">
       <Container>
-        <Row>
+        <Row className="mb-2 mb-md-4">
           <Col lg={7} className="portfolio-intro text-center mx-auto">
-            <h2 className="second-title">Portofolio</h2>
-            <p className="description px-2 px-md-5">
-              Beberapa website yang sudah dideploy menggunakan layanan hosting
-              dari netlify
-            </p>
+            <h2 className="second-title">Hasil kerjaan saya</h2>
           </Col>
         </Row>
         <Row className="mt-4">
           {webDesignContents.map((content, i) => (
-            <Col lg={4} className="portfolio-items pl-md-2">
-              <Card className="portfolio-card border-0 text-start mt-4" key={i}>
-                <Card.Header className="p-0 border-0">
-                  <img
-                    src={content.image}
-                    alt={content.alt}
-                    className="img-fluid"
-                  />
-                </Card.Header>
-                <Card.Body className="px-3 d-flex align-items-center justify-content-between">
-                  <div className="card-content">
-                    <p className="card-title m-0">{content.title}</p>
-                    <p className="small">Figma, React & Bootsrtap</p>
-                  </div>
-                  <Button
-                    href={content.link}
-                    target="blank"
-                    variant="third-button rounded-lg px-4"
-                  >
-                    View
-                  </Button>
-                </Card.Body>
-              </Card>
+            <Col md={6} key={i} className="portfolio-items">
+              <a href={content.link}>
+                <img
+                  src={content.image}
+                  alt={content.alt}
+                  className="img-fluid mb-4"
+                />
+              </a>
             </Col>
           ))}
         </Row>
@@ -60,17 +40,10 @@ const webDesignContents = [
     link: "https://aliandacourses.netlify.app/",
   },
   {
-    image: Myportfolio,
+    image: Moriba,
     alt: "Landing page my portfolio",
     title: "My Portfolio",
     body: "Made with React & Bootstrap",
-    link: "https://aliandabatubara.netlify.app/",
-  },
-  {
-    image: Gadjian,
-    alt: "Admin dashboard gadjian",
-    title: "Gadjian",
-    body: "Made with React & Bootstrap",
-    link: "https://aliandagadjian.netlify.app/",
+    link: "https://moriba.netlify.app/",
   },
 ];

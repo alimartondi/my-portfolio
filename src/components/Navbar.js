@@ -4,7 +4,7 @@ import Burger from "react-css-burger";
 import "../style/navbar.css";
 import Brand from "../image/batubara_org.svg";
 import BatubaraWhite from "../image/batubara_white.svg";
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -13,30 +13,23 @@ export default function NavBar() {
 
   const isOnTop = useScrollHandler();
 
-  const scrollToTop = () => {
-    animateScroll.scrollToTop();
-  };
-
   const open = () => setState(!open);
 
   return (
     <header className="header" id="header">
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
-          <div className="navbar-brand">
-            <img src={Brand} alt="Logo" onClick={scrollToTop} />
-          </div>
+          <Link to="hero" className="navbar-brand">
+            <img src={Brand} alt="Logo" />
+          </Link>
           <div className={state.active ? "nav-items active" : "nav-items"}>
-            <div
+            <Link
+              to="hero"
               className="sidebar-brand text-center mt-5 d-block d-xl-none"
               onClick={open}
             >
-              <img
-                src={BatubaraWhite}
-                alt="sidebar logo"
-                onClick={scrollToTop}
-              />
-            </div>
+              <img src={BatubaraWhite} alt="sidebar logo" />
+            </Link>
             <hr className="d-block d-xl-none text-center" />
             <Link
               to="service"
@@ -45,7 +38,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              Service
+              Ability
             </Link>
             <Link
               to="project"
@@ -68,7 +61,7 @@ export default function NavBar() {
             <Link
               to="contact"
               spy={true}
-              offset={-150}
+              offset={-130}
               className="nav-link"
               onClick={open}
             >
